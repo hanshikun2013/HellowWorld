@@ -20,7 +20,7 @@
 	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
 	</target>
 	-->
-	<target name="all" depends="deletegen,init,call.TableModel2DataModelGenerator,copy">
+	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,copy">
 	</target>
 	
 	<target name="call.SampleGenerator">
@@ -32,6 +32,17 @@
 			<arg value="${dist.dir}" />
 		</java>
 	</target>
+	
+	<target name="call.DataModel2TableModelGenerator">
+		<java classname="groovy.ui.GroovyMain" fork="yes" >
+			<classpath refid="classlib" />
+			<arg value="--encoding=UTF-8" />
+			<arg value="src/script/DataModel2TableModelGenerator.groovy" />
+			<arg value="${sqlPath}" />
+			<arg value="${dist.dir}" />
+		</java>
+	</target>	
+
 	<target name="call.TableModel2DataModelGenerator">
 		<java classname="groovy.ui.GroovyMain" fork="yes" >
 			<classpath refid="classlib" />

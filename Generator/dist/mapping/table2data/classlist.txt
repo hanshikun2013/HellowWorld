@@ -1,0 +1,1316 @@
+
+{
+	TableModel:T_CORP_PLAN_FAMILY
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+}
+
+{
+	TableModel:T_CORP_PFAMLY_NENKIN_DET
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+}
+
+{
+	TableModel:T_CORP_KIHON_INFO
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+}
+
+{
+	TableModel:T_CORP_KEIEISHA_RBUNSEKI
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+}
+
+{
+	TableModel:T_CORP_CASHF_KAIZE
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : 
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+}
+
+{
+	DataModel:PlanFamily
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:LtPension
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:LtPlan
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 8(経営者リスク対策)
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:lbsc0009
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:lbsc0008
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:lbsc0010
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:lbsc00011
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
+
+{
+	DataModel:lbsc00013
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+		{
+			Name : 
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : 
+		}
+}
