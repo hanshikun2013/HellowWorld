@@ -21,9 +21,9 @@ import tool.model.sql.IoItem;
 //String filePath =args[0]
 //String outputPath=args[1]
 //String template = "./template"
-String filePath ="C:/workspaceSSS/workspace/Generator/input/sql.xml"
-String template = "C:/workspaceSSS/workspace/Generator/template"
-String outputPath="C:/workspaceSSS/workspace/Generator/dist"
+String filePath ="C:/Users/cap/git/HellowWorld/Generator/input/sql.xml"
+String template = "C:/Users/cap/git/HellowWorld/Generator/template"
+String outputPath="C:/Users/cap/git/HellowWorld/Generator/dist"
 
 def builder     = DocumentBuilderFactory.newInstance().newDocumentBuilder()
 def dom     = builder.parse(filePath)

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.axa.life.app.lt.mapper.gen.KihonMapper">
+  <resultMap id="resultMap" type="jp.co.axa.life.app.lt.result.gen.KihonRecord" >
+    <result column="KIHON_PLAN_ID" property="kihonPlanId" jdbcType="VARCHAR" />
+    <result column="KIHON_AGENT_ID" property="kihonAgentId" jdbcType="VARCHAR" />
+    <result column="KIHON_CUST_ID" property="kihonCustId" jdbcType="VARCHAR" />
+    <result column="KIHON_BUNSEKI_SB_CD" property="kihonBunsekiSbCd" jdbcType="CHAR" />
+    <result column="KIHON_BUNSEKI_CREATE_DATE" property="kihonBunsekiCreateDate" jdbcType="DATE" />
+    <result column="KIHON_BUNSEKI_UPDATE_DATE" property="kihonBunsekiUpdateDate" jdbcType="DATE" />
+    <result column="KIHON_CORP_NAME" property="kihonCorpName" jdbcType="VARCHAR" />
+    <result column="KIHON_CORP_NAME_KANA" property="kihonCorpNameKana" jdbcType="VARCHAR" />
+    <result column="KIHON_CORP_JIKKOUZEI_RT" property="kihonCorpJikkouzeiRt" jdbcType="NUMERIC" />
+    <result column="KIHON_NYUSHA_AGE" property="kihonNyushaAge" jdbcType="NUMERIC" />
+    <result column="KIHON_YAKUIN_SHUNIN_AGE" property="kihonYakuinShuninAge" jdbcType="NUMERIC" />
+    <result column="KIHON_EP_KANYU_AGE" property="kihonEpKanyuAge" jdbcType="NUMERIC" />
+    <result column="KIHON_GENZAI_HOSHU_GETSUGAKU" property="kihonGenzaiHoshuGetsugaku" jdbcType="NUMERIC" />
+    <result column="KIHON_YUTAI_YSHOSHU_GETSUGAKU" property="kihonYutaiYshoshuGetsugaku" jdbcType="NUMERIC" />
+    <result column="KIHON_KOSEKI_BAI_RT" property="kihonKosekiBaiRt" jdbcType="NUMERIC" />
+    <result column="KIHON_YUTAI_YOSOKU_AGE" property="kihonYutaiYosokuAge" jdbcType="NUMERIC" />
+    <result column="KIHON_KIBO_YAKUIN_TIROKIN" property="kihonKiboYakuinTirokin" jdbcType="NUMERIC" />
+    <result column="KIHON_BUNSEKI_COMMENT" property="kihonBunsekiComment" jdbcType="VARCHAR" />
+    <result column="KIHON_SYSTEM_CREATE_DATE" property="kihonSystemCreateDate" jdbcType="DATE" />
+    <result column="KIHON_SYSTEM_UPDATE_DATE" property="kihonSystemUpdateDate" jdbcType="DATE" />
+    <result column="FAM_PLAN_ID" property="famPlanId" jdbcType="VARCHAR" />
+    <result column="FAM_FAMILY_CD" property="famFamilyCd" jdbcType="CHAR" />
+    <result column="FAM_FAMILY_NAME_KANJI" property="famFamilyNameKanji" jdbcType="VARCHAR" />
+    <result column="FAM_FAMILY_NAME_KANA" property="famFamilyNameKana" jdbcType="VARCHAR" />
+    <result column="FAM_BIRTH" property="famBirth" jdbcType="DATE" />
+    <result column="FAM_AGE" property="famAge" jdbcType="NUMERIC" />
+    <result column="FAM_BIRTH_AGE_SELECT_CD" property="famBirthAgeSelectCd" jdbcType="CHAR" />
+    <result column="FAM_ZOKUGARA_CD" property="famZokugaraCd" jdbcType="CHAR" />
+    <result column="FAM_SEX_CD" property="famSexCd" jdbcType="CHAR" />
+    <result column="FAM_JOB_CD" property="famJobCd" jdbcType="CHAR" />
+    <result column="FAM_NENSHU" property="famNenshu" jdbcType="NUMERIC" />
+    <result column="FAM_TAISHOKU_PLAN_AGE" property="famTaishokuPlanAge" jdbcType="NUMERIC" />
+    <result column="FAM_HEIKIN_YOMEI" property="famHeikinYomei" jdbcType="NUMERIC" />
+    <result column="FAM_IMEJI_GAZOU_CD" property="famImejiGazouCd" jdbcType="CHAR" />
+    <result column="FAM_SYSTEM_CREATE_DATE" property="famSystemCreateDate" jdbcType="DATE" />
+    <result column="FAM_SYSTEM_UPDATE_DATE" property="famSystemUpdateDate" jdbcType="DATE" />
+    <result column="DET_PLAN_ID" property="detPlanId" jdbcType="VARCHAR" />
+    <result column="DET_FAMILY_CD" property="detFamilyCd" jdbcType="CHAR" />
+    <result column="DET_GYO_NO" property="detGyoNo" jdbcType="NUMERIC" />
+    <result column="DET_NENKIN_TYPE_CD" property="detNenkinTypeCd" jdbcType="CHAR" />
+    <result column="DET_START_NENGETSU" property="detStartNengetsu" jdbcType="CHAR" />
+    <result column="DET_AGE_FROM" property="detAgeFrom" jdbcType="NUMERIC" />
+    <result column="DET_END_NENGETSU" property="detEndNengetsu" jdbcType="CHAR" />
+    <result column="DET_AGE_TO" property="detAgeTo" jdbcType="NUMERIC" />
+    <result column="DET_KANYU_TSUKISU" property="detKanyuTsukisu" jdbcType="NUMERIC" />
+    <result column="DET_NENSHU" property="detNenshu" jdbcType="NUMERIC" />
+    <result column="DET_SYSTEM_CREATE_DATE" property="detSystemCreateDate" jdbcType="DATE" />
+    <result column="DET_SYSTEM_UPDATE_DATE" property="detSystemUpdateDate" jdbcType="DATE" />
+  </resultMap>
+    <select id="selectByCondition" resultMap="resultMap" parameterType="jp.co.axa.life.app.lt.parameter.gen.KihonCondition">
+       
+			
+			SELECT 
+			--法人基本情報
+			  BASE.KIHON_PLAN_ID                      KIHON_PLAN_ID
+			 ,BASE.KIHON_AGENT_ID                     KIHON_AGENT_ID
+			 ,BASE.KIHON_CUST_ID                      KIHON_CUST_ID
+			 ,BASE.KIHON_BUNSEKI_SB_CD                KIHON_BUNSEKI_SB_CD
+			 ,BASE.KIHON_BUNSEKI_CREATE_DATE          KIHON_BUNSEKI_CREATE_DATE
+			 ,BASE.KIHON_BUNSEKI_UPDATE_DATE          KIHON_BUNSEKI_UPDATE_DATE
+			 ,BASE.KIHON_CORP_NAME                    KIHON_CORP_NAME
+			 ,BASE.KIHON_CORP_NAME_KANA               KIHON_CORP_NAME_KANA
+			 ,BASE.KIHON_CORP_JIKKOUZEI_RT            KIHON_CORP_JIKKOUZEI_RT
+			 ,BASE.KIHON_NYUSHA_AGE                   KIHON_NYUSHA_AGE
+			 ,BASE.KIHON_YAKUIN_SHUNIN_AGE            KIHON_YAKUIN_SHUNIN_AGE
+			 ,BASE.KIHON_EP_KANYU_AGE                 KIHON_EP_KANYU_AGE
+			 ,BASE.KIHON_GENZAI_HOSHU_GETSUGAKU       KIHON_GENZAI_HOSHU_GETSUGAKU
+			 ,BASE.KIHON_YUTAI_YSHOSHU_GETSUGAKU      KIHON_YUTAI_YSHOSHU_GETSUGAKU
+			 ,BASE.KIHON_KOSEKI_BAI_RT                KIHON_KOSEKI_BAI_RT
+			 ,BASE.KIHON_YUTAI_YOSOKU_AGE             KIHON_YUTAI_YOSOKU_AGE
+			 ,BASE.KIHON_KIBO_YAKUIN_TIROKIN          KIHON_KIBO_YAKUIN_TIROKIN
+			 ,BASE.KIHON_BUNSEKI_COMMENT              KIHON_BUNSEKI_COMMENT
+			 ,BASE.KIHON_SYSTEM_CREATE_DATE           KIHON_SYSTEM_CREATE_DATE
+			 ,BASE.KIHON_SYSTEM_UPDATE_DATE           KIHON_SYSTEM_UPDATE_DATE
+			--法人プラン家族
+			 ,BASE.FAM_PLAN_ID                      FAM_PLAN_ID
+			 ,BASE.FAM_FAMILY_CD                    FAM_FAMILY_CD
+			 ,BASE.FAM_FAMILY_NAME_KANJI            FAM_FAMILY_NAME_KANJI
+			 ,BASE.FAM_FAMILY_NAME_KANA             FAM_FAMILY_NAME_KANA
+			 ,BASE.FAM_BIRTH                        FAM_BIRTH
+			 ,BASE.FAM_AGE                          FAM_AGE
+			 ,BASE.FAM_BIRTH_AGE_SELECT_CD          FAM_BIRTH_AGE_SELECT_CD
+			 ,BASE.FAM_ZOKUGARA_CD                  FAM_ZOKUGARA_CD
+			 ,BASE.FAM_SEX_CD                       FAM_SEX_CD
+			 ,BASE.FAM_JOB_CD                       FAM_JOB_CD
+			 ,BASE.FAM_NENSHU                       FAM_NENSHU
+			 ,BASE.FAM_TAISHOKU_PLAN_AGE            FAM_TAISHOKU_PLAN_AGE
+			 ,BASE.FAM_HEIKIN_YOMEI                 FAM_HEIKIN_YOMEI
+			 ,BASE.FAM_IMEJI_GAZOU_CD               FAM_IMEJI_GAZOU_CD
+			 ,BASE.FAM_SYSTEM_CREATE_DATE           FAM_SYSTEM_CREATE_DATE
+			 ,BASE.FAM_SYSTEM_UPDATE_DATE           FAM_SYSTEM_UPDATE_DATE
+			--法人プラン家族年金詳細
+			 ,DET.PLAN_ID                        DET_PLAN_ID
+			 ,DET.FAMILY_CD                      DET_FAMILY_CD
+			 ,DET.GYO_NO                         DET_GYO_NO
+			 ,DET.NENKIN_TYPE_CD                 DET_NENKIN_TYPE_CD
+			 ,DET.START_NENGETSU                 DET_START_NENGETSU
+			 ,DET.AGE_FROM                       DET_AGE_FROM
+			 ,DET.END_NENGETSU                   DET_END_NENGETSU
+			 ,DET.AGE_TO                         DET_AGE_TO
+			 ,DET.KANYU_TSUKISU                  DET_KANYU_TSUKISU
+			 ,DET.NENSHU                         DET_NENSHU
+			 ,DET.SYSTEM_CREATE_DATE             DET_SYSTEM_CREATE_DATE
+			 ,DET.SYSTEM_UPDATE_DATE             DET_SYSTEM_UPDATE_DATE
+			FROM (
+			SELECT 
+			  KIHON.PLAN_ID                      KIHON_PLAN_ID
+			 ,KIHON.AGENT_ID                     KIHON_AGENT_ID
+			 ,KIHON.CUST_ID                      KIHON_CUST_ID
+			 ,KIHON.BUNSEKI_SB_CD                KIHON_BUNSEKI_SB_CD
+			 ,KIHON.BUNSEKI_CREATE_DATE          KIHON_BUNSEKI_CREATE_DATE
+			 ,KIHON.BUNSEKI_UPDATE_DATE          KIHON_BUNSEKI_UPDATE_DATE
+			 ,KIHON.CORP_NAME                    KIHON_CORP_NAME
+			 ,KIHON.CORP_NAME_KANA               KIHON_CORP_NAME_KANA
+			 ,KIHON.CORP_JIKKOUZEI_RT            KIHON_CORP_JIKKOUZEI_RT
+			 ,KIHON.NYUSHA_AGE                   KIHON_NYUSHA_AGE
+			 ,KIHON.YAKUIN_SHUNIN_AGE            KIHON_YAKUIN_SHUNIN_AGE
+			 ,KIHON.EP_KANYU_AGE                 KIHON_EP_KANYU_AGE
+			 ,KIHON.GENZAI_HOSHU_GETSUGAKU       KIHON_GENZAI_HOSHU_GETSUGAKU
+			 ,KIHON.YUTAI_YSHOSHU_GETSUGAKU      KIHON_YUTAI_YSHOSHU_GETSUGAKU
+			 ,KIHON.KOSEKI_BAI_RT                KIHON_KOSEKI_BAI_RT
+			 ,KIHON.YUTAI_YOSOKU_AGE             KIHON_YUTAI_YOSOKU_AGE
+			 ,KIHON.KIBO_YAKUIN_TIROKIN          KIHON_KIBO_YAKUIN_TIROKIN
+			 ,KIHON.BUNSEKI_COMMENT              KIHON_BUNSEKI_COMMENT
+			 ,KIHON.SYSTEM_CREATE_DATE           KIHON_SYSTEM_CREATE_DATE
+			 ,KIHON.SYSTEM_UPDATE_DATE           KIHON_SYSTEM_UPDATE_DATE
+			 ,FAM.PLAN_ID                        FAM_PLAN_ID
+			 ,FAM.FAMILY_CD                      FAM_FAMILY_CD
+			 ,FAM.FAMILY_NAME_KANJI              FAM_FAMILY_NAME_KANJI
+			 ,FAM.FAMILY_NAME_KANA               FAM_FAMILY_NAME_KANA
+			 ,FAM.BIRTH                          FAM_BIRTH
+			 ,FAM.AGE                            FAM_AGE
+			 ,FAM.BIRTH_AGE_SELECT_CD            FAM_BIRTH_AGE_SELECT_CD
+			 ,FAM.ZOKUGARA_CD                    FAM_ZOKUGARA_CD
+			 ,FAM.SEX_CD                         FAM_SEX_CD
+			 ,FAM.JOB_CD                         FAM_JOB_CD
+			 ,FAM.NENSHU                         FAM_NENSHU
+			 ,FAM.TAISHOKU_PLAN_AGE              FAM_TAISHOKU_PLAN_AGE
+			 ,FAM.HEIKIN_YOMEI                   FAM_HEIKIN_YOMEI
+			 ,FAM.IMEJI_GAZOU_CD                 FAM_IMEJI_GAZOU_CD
+			 ,FAM.SYSTEM_CREATE_DATE             FAM_SYSTEM_CREATE_DATE
+			 ,FAM.SYSTEM_UPDATE_DATE             FAM_SYSTEM_UPDATE_DATE
+			FROM
+			  T_CORP_KIHON_INFO        KIHON
+			 ,T_CORP_PFAMLY            FAM
+			WHERE
+			     KIHON.PLAN_ID     = #{planId}
+			 AND FAM.PLAN_ID(+)    = #{planId}
+			 AND KIHON.PLAN_ID     = FAM.PLAN_ID(+)
+			) BASE
+			, T_CORP_PFAMLY_NENKIN_DET DET
+			WHERE 
+			  DET.PLAN_ID(+)         = #{planId}
+			  AND BASE.FAM_PLAN_ID   = DET.PLAN_ID(+)
+			  AND BASE.FAM_FAMILY_CD = DET.FAMILY_CD(+)
+			
+    </select>
+</mapper>
+

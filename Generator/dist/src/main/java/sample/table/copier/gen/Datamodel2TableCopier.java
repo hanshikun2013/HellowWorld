@@ -195,7 +195,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : PlanFamily
 			//画面データモデル.入力 : 年収
 			//画面データモデル.key名 : annualIncome
@@ -433,7 +433,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : LtPension
 			//画面データモデル.入力 : 年収
 			//画面データモデル.key名 : income
@@ -671,7 +671,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0009
 			//画面データモデル.入力 : 功績倍率
 			//画面データモデル.key名 : achievementMagnification
@@ -824,7 +824,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0009
 			//画面データモデル.入力 : 借入相当額
 			//画面データモデル.key名 : karireSotogaku
@@ -839,7 +839,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0009
 			//画面データモデル.入力 : 従業員給与(月間)
 			//画面データモデル.key名 : jugyoinkyuyoMonth
@@ -899,7 +899,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0009
 			//画面データモデル.入力 : 経営立直し資金
 			//画面データモデル.key名 : keieiTatenaosiSikin
@@ -944,7 +944,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0008
 			//画面データモデル.入力 : 現在の売上高
 			//画面データモデル.key名 : uriagedakaCurrent
@@ -1227,7 +1227,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0010
 			//画面データモデル.入力 : 予想報酬月額(勇退時)
 			//画面データモデル.key名 : hoshuGetugakuYutai
@@ -1272,7 +1272,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc0010
 			//画面データモデル.入力 : 希望退職慰労金額
 			//画面データモデル.key名 : kiboTaishokuIrokin
@@ -1557,7 +1557,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc00011
 			//画面データモデル.入力 : 報酬月額(現在)
 			//画面データモデル.key名 : hoshuGetugakuCurrent
@@ -1587,7 +1587,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc00011
 			//画面データモデル.入力 : 希望退職慰労金額
 			//画面データモデル.key名 : kiboTaishokuIrokin
@@ -1692,7 +1692,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : LtPlan
 			//画面データモデル.入力 : 役員報酬引下額
 			//画面データモデル.key名 : amountOfExecutiveCompensationReduction
@@ -1960,7 +1960,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc00013
 			//画面データモデル.入力 : 報酬月額(現在)
 			//画面データモデル.key名 : hoshuGetugakuCurrent
@@ -1975,7 +1975,7 @@ class Datamodel2TableCopier{
 			//テーブル.属性 : Number
 			//テーブル.桁数 : 11
 			//テーブル.少数 : 
-			//テーブル.備考 : 
+			//テーブル.備考 : ×1000をセット
 			//画面データモデル.モデルID/概要 : lbsc00013
 			//画面データモデル.入力 : 予想報酬月額(勇退時)
 			//画面データモデル.key名 : hoshuGetugakuYutai

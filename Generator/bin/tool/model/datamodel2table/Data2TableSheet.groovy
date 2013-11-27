@@ -73,23 +73,23 @@ class Data2TableSheet extends BasicSheet{
 				temp2=item.get("テーブル.テーブル(物理/論理)")
 			}
 		}
-		//fix テーブル(物理/論理)
-		String temp3="";
-		for(HashMap item:items2){
-			if( skipTable( item)){
-				//Nothing todo
-			}
-			else{
-				if("".equals(item.get("テーブル.備考"))
-				||!ComUtility.isIdentifier(item.get("テーブル.備考"))){
-					item.put("テーブル.備考",temp3)
-				}else{
-					temp3=item.get("テーブル.備考")
-					//System.out.println ("テーブル.備考"+item.get("テーブル.備考"))
-				}
-			}
-
-		}
+//		//fix モデルID/概要
+//		String temp3="";
+//		for(HashMap item:items2){
+//			if( skipTable( item)){
+//				//Nothing todo
+//			}
+//			else{
+//				if("".equals(item.get("テーブル.備考"))
+//				||!ComUtility.isIdentifier(item.get("テーブル.備考"))){
+//					item.put("テーブル.備考",temp3)
+//				}else{
+//					temp3=item.get("テーブル.備考")
+//					//System.out.println ("テーブル.備考"+item.get("テーブル.備考"))
+//				}
+//			}
+//
+//		}
 		//dumpItems(items2)
 		//fix テーブル(物理/論理)
 		String temp4="";

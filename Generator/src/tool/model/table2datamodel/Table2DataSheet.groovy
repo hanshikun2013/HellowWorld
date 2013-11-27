@@ -26,19 +26,19 @@ class Table2DataSheet extends BasicSheet{
 		startY=3;
 		TITLE_NAME=[
 			"機能",
-			"テーブル.テーブル(物理/論理)" ,
-			"テーブル.項目名(論理)",
-			"テーブル.項目名(物理)".trim(),
-			"テーブル.属性",
-			"テーブル.桁数",
-			"テーブル.少数",
-			"テーブル.備考",
 			"画面データモデル.モデルID/概要",
 			"画面データモデル.入力",
 			"画面データモデル.key名",
 			"画面データモデル.型",
-			"画面データモデル.備考"
-		];
+			"画面データモデル.備考",
+			"テーブル.テーブル(物理/論理)" ,
+			"テーブル.項目名(論理)",
+			"テーブル.項目名(物理)",
+			"テーブル.属性",
+			"テーブル.桁数",
+			"テーブル.少数",
+			"テーブル.備考"
+			];
 	}
 
 	public parse(Sheet sheet){
@@ -63,33 +63,34 @@ class Table2DataSheet extends BasicSheet{
 			}
 		}
 
+		
 		String temp2="";
 		for(HashMap item:items2){
-			if("".equals(item.get("テーブル.テーブル(物理/論理)"))
-			||!ComUtility.isIdentifier(item.get("テーブル.テーブル(物理/論理)"))
+			if("".equals(item.get("画面データモデル.モデルID/概要"))
+			||!ComUtility.isIdentifier(item.get("画面データモデル.モデルID/概要"))
 			){
-				item.put("テーブル.テーブル(物理/論理)",temp2)
+				item.put("画面データモデル.モデルID/概要",temp2)
 			}else{
-				temp2=item.get("テーブル.テーブル(物理/論理)")
+				temp2=item.get("画面データモデル.モデルID/概要")
 			}
 		}
-		//fix テーブル(物理/論理)
-		String temp3="";
-		for(HashMap item:items2){
-			if( skipTable( item)){
-				//Nothing todo
-			}
-			else{
-				if("".equals(item.get("テーブル.備考"))
-				||!ComUtility.isIdentifier(item.get("テーブル.備考"))){
-					item.put("テーブル.備考",temp3)
-				}else{
-					temp3=item.get("テーブル.備考")
-					//System.out.println ("テーブル.備考"+item.get("テーブル.備考"))
-				}
-			}
-
-		}
+//		//fix テーブル(物理/論理)
+//		String temp3="";
+//		for(HashMap item:items2){
+//			if( skipTable( item)){
+//				//Nothing todo
+//			}
+//			else{
+//				if("".equals(item.get("テーブル.備考"))
+//				||!ComUtility.isIdentifier(item.get("テーブル.備考"))){
+//					item.put("テーブル.備考",temp3)
+//				}else{
+//					temp3=item.get("テーブル.備考")
+//					//System.out.println ("テーブル.備考"+item.get("テーブル.備考"))
+//				}
+//			}
+//
+//		}
 		//dumpItems(items2)
 		//fix テーブル(物理/論理)
 		String temp4="";
@@ -98,11 +99,11 @@ class Table2DataSheet extends BasicSheet{
 				//Nothing todo
 			}
 			else{
-				if("".equals(item.get("画面データモデル.モデルID/概要"))
-				||!ComUtility.isIdentifier(item.get("画面データモデル.モデルID/概要"))){
-					item.put("画面データモデル.モデルID/概要",temp4)
+				if("".equals(item.get("テーブル.テーブル(物理/論理)"))
+				||!ComUtility.isIdentifier(item.get("テーブル.テーブル(物理/論理)"))){
+					item.put("テーブル.テーブル(物理/論理)",temp4)
 				}else{
-					temp4=item.get("画面データモデル.モデルID/概要")
+					temp4=item.get("テーブル.テーブル(物理/論理)")
 					//System.out.println ("テーブル.備考"+item.get("テーブル.備考"))
 				}
 			}
@@ -121,34 +122,39 @@ class Table2DataSheet extends BasicSheet{
 		//build TableModels
 		for(HashMap item:items){
 			//lookup TableModel
-			String modelId=item.get("テーブル.テーブル(物理/論理)")
-			TableModel tableModel=mappingModel.lookupTableModel(modelId)
-			if(tableModel==null){
-				tableModel=new TableModel();
-				tableModel.setName(modelId)
-				mappingModel.addTableModel(tableModel)
-			}
-
-			//lookup TableModel item
-			String key=item.get("テーブル.項目名(物理)")
-			TableModelItem tableModelItem=tableModel.lookupByKey(key)
-			if(tableModelItem==null){
-				tableModelItem=new TableModelItem();
-				tableModelItem.setPhysicalName(item.get("テーブル.項目名(物理)"))
-				tableModel.addItem(tableModelItem)
-				//copy attributes
-				//item.get("テーブル.テーブル(物理/論理)")
-				
-				tableModelItem.setTableName(item.get("テーブル.テーブル(物理/論理)"))
-				tableModelItem.setLogicalName(item.get("テーブル.項目名(論理)"))
-				tableModelItem.setAttr(item.get("テーブル.属性"))
-				tableModelItem.setNumberDigits(item.get("テーブル.桁数"))
-				tableModelItem.setNumberPoints(item.get("テーブル.少数"))
-				tableModelItem.setRemark(item.get("テーブル.備考"))
+			
+			if("".equals(item.get("テーブル.テーブル(物理/論理)"))
+			||!ComUtility.isIdentifier(item.get("テーブル.テーブル(物理/論理)"))){
+				//skip
 			}else{
-				//Nothing tod if duplicated
+				String modelId=item.get("テーブル.テーブル(物理/論理)")
+				TableModel tableModel=mappingModel.lookupTableModel(modelId)
+				if(tableModel==null){
+					tableModel=new TableModel();
+					tableModel.setName(modelId)
+					mappingModel.addTableModel(tableModel)
+				}
+	
+				//lookup TableModel item
+				String key=item.get("テーブル.項目名(物理)")
+				TableModelItem tableModelItem=tableModel.lookupByKey(key)
+				if(tableModelItem==null){
+					tableModelItem=new TableModelItem();
+					tableModelItem.setPhysicalName(item.get("テーブル.項目名(物理)"))
+					tableModel.addItem(tableModelItem)
+					//copy attributes
+					//item.get("テーブル.テーブル(物理/論理)")
+					
+					tableModelItem.setTableName(item.get("テーブル.テーブル(物理/論理)"))
+					tableModelItem.setLogicalName(item.get("テーブル.項目名(論理)"))
+					tableModelItem.setAttr(item.get("テーブル.属性"))
+					tableModelItem.setNumberDigits(item.get("テーブル.桁数"))
+					tableModelItem.setNumberPoints(item.get("テーブル.少数"))
+					tableModelItem.setRemark(item.get("テーブル.備考"))
+				}else{
+					//Nothing tod if duplicated
+				}
 			}
-
 			if("".equals(item.get("画面データモデル.モデルID/概要"))
 			||!ComUtility.isIdentifier(item.get("画面データモデル.モデルID/概要"))){
 				//skip
@@ -197,7 +203,7 @@ class Table2DataSheet extends BasicSheet{
 			}
 			
 			//lookup TableModel item
-			String modelId=item.get("テーブル.テーブル(物理/論理)")
+			String modelId=item.get("画面データモデル.モデルID/概要")
 			FuncGroupModel funcGroupModel=funcModel.lookupByName(modelId)
 			if(funcGroupModel==null){
 				funcGroupModel=new FuncGroupModel();
@@ -216,7 +222,8 @@ class Table2DataSheet extends BasicSheet{
 	}
 
 	boolean skipTableColLogical(HashMap item){
-		if( "".equals(item.get("画面データモデル.key名").trim())
+		
+		if( "".equals(item.get("テーブル.項目名(物理)").trim())
 		){
 			return true;
 		}
@@ -232,7 +239,7 @@ class Table2DataSheet extends BasicSheet{
 	}
 	boolean skip(HashMap item){
 
-		if("".equals(item.get("テーブル.項目名(物理)".trim()).trim())
+		if("".equals(item.get("画面データモデル.入力".trim()).trim())
 		//||"".equals(item.get("テーブル.項目名(物理)".trim()).trim())
 		){
 			return true;

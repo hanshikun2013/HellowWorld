@@ -71,6 +71,9 @@ class StringUtil  {
 	}
 
 	static String toProperCase(String s) {
+		if("".equals(s)){
+			return "";
+		}
 		return s.substring(0, 1).toUpperCase() +
 		s.substring(1).toLowerCase();
 	}

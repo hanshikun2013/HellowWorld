@@ -2,1315 +2,1291 @@
 {
 	TableModel:T_CORP_PLAN_FAMILY
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 }
 
 {
 	TableModel:T_CORP_PFAMLY_NENKIN_DET
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 }
 
 {
 	TableModel:T_CORP_KIHON_INFO
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 }
 
 {
 	TableModel:T_CORP_KEIEISHA_RBUNSEKI
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 }
 
 {
 	TableModel:T_CORP_CASHF_KAIZE
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : 
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : 
+
 		}
 }
 
 {
 	DataModel:PlanFamily
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:LtPension
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:LtPlan
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 8(経営者リスク対策)
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:lbsc0009
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:lbsc0008
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:lbsc0010
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:lbsc00011
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }
 
 {
 	DataModel:lbsc00013
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 		{
-			Name : 
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : 
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  
 		}
 }

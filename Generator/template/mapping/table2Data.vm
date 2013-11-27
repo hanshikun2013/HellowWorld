@@ -4,12 +4,14 @@
 	TableModel:$tableModel.name
 #foreach($tableModelItem in ${tableModel.items})
 		{
-			modelId : $tableModelItem.modelId
-			input : $tableModelItem.input
-			key : $tableModelItem.key
-			remark : $tableModelItem.remark
-			type : $tableModelItem.type
-			charNum : $tableModelItem.charNum
+			//テーブル.テーブル(物理/論理) : $tableModelItem.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $tableModelItem.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $tableModelItem.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $tableModelItem.get("テーブル.属性")
+			//テーブル.桁数 : $tableModelItem.get("テーブル.桁数")
+			//テーブル.少数 : $tableModelItem.get("テーブル.少数")
+			//テーブル.備考 : $StringUtil.cleanUpString($tableModelItem.get("テーブル.備考"))
+
 		}
 #end
 }
@@ -20,13 +22,11 @@
 	DataModel:$dataModel.name
 #foreach($dataModelItem in ${dataModel.items})
 		{
-			Name : $dataModelItem.Name
-			ColLogical : $dataModelItem.ColLogical
-			ColPhysical : $dataModelItem.ColPhysical
-			Attr : $dataModelItem.Attr
-			CharNum : $dataModelItem.CharNum
-			DecPoint : $dataModelItem.DecPoint
-			Remark : $dataModelItem.Remark
+			//画面データモデル.モデルID/概要 : $dataModelItem.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $dataModelItem.get("画面データモデル.入力")
+			//画面データモデル.key名 : $dataModelItem.get("画面データモデル.key名")
+			//画面データモデル.型 : $dataModelItem.get("画面データモデル.型")
+			//画面データモデル.備考 :  $StringUtil.cleanUpString($dataModelItem.get("画面データモデル.備考"))
 		}
 #end	
 }
