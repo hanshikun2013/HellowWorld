@@ -1,0 +1,81 @@
+package ${packageservice_test};
+
+import org.dbunit.Assertion;
+import org.dbunit.dataset.ITable;
+import org.dbunit.dataset.SortedTable;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import java.util.List;
+
+import jp.co.axa.life.app.common.dao.BaseDaoTest;
+import jp.co.axa.life.app.common.dao.DbUnitUtils;
+
+
+import ${packageDao}.${sqlModel.name}Dao;
+import ${packageParameter}.${sqlModel.name}Condition;
+import ${packageResult}.${sqlModel.name}Record;
+import ${package_model}.${sqlModel.name}JsonCondition;
+import ${package_model}.${sqlModel.name}JsonRecord;
+import ${packageService}.${sqlModel.name}Service;
+
+@ContextConfiguration(locations="${StringUtil.fixPath("classpath:${packageservice_test_resource}.${sqlModel.name}")}ServiceTest-context.xml")
+public class ${sqlModel.name}ServiceTest extends BaseDaoTest{
+
+	/** テスト対象のDao */
+	@Autowired
+	private ${sqlModel.name}Service $StringUtil.toLowerCaseInitial(${sqlModel.name})Service;
+	
+    // @Before が付加されたメソッドは、
+    // @Test アノテーションが付いたメソッドを実行するたびに事前に実行されることを意味します。
+    @Before
+    public void setUp() throws Exception {
+    	//初期データの投入
+    	//super.getDatabaseTester().setDataSet(DbUnitUtils.getExpectedDataSet("${StringUtil.fixPath("${packagedao_test_resource}.${sqlModel.name}")}DaoTest-setup.xls"));
+    	//super.getDatabaseTester().onSetup();
+    }
+
+    @Test
+    public void testSelectByCondition() throws Exception {
+    	//登録データの設定
+		//TODO:prepare DB data
+		
+		//TODO:set condition
+		${sqlModel.name}JsonCondition condition = new ${sqlModel.name}JsonCondition();
+		
+#foreach($item in ${sqlModel.params})
+		condition.set$StringUtil.toUpperCaseInitial( $item.name)("") ;
+#end
+		
+		//call Dao
+		List<${sqlModel.name}JsonRecord> result= ${StringUtil.toLowerCaseInitial(${sqlModel.name})}Service.selectByCondition(condition);
+		
+		//TODO:
+		assertEquals(result.size(),1);
+		
+    }
+
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+        // @BeforeClass が付加されたメソッドは、
+        // このテストクラスを呼び出す前に実行されます。
+    }
+    
+    @AfterClass
+    public static void tearDownAfterClass() throws Exception {
+        // @AfterClass が付加されたメソッドは、
+        // このテストクラスを呼び出した後に実行されます。
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        // @After が付加されたメソッドは、
+        // @Test アノテーションが付いたメソッドを実行するたびに、必ず後から実行されることを意味します。
+    }
+}

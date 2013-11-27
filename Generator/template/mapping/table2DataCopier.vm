@@ -1,0 +1,4 @@
+package $copierPackage;
+class Table2DatamodelCopier{
+
+}

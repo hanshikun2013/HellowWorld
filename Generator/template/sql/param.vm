@@ -1,0 +1,22 @@
+package ${packageParameter};
+
+
+public class ${sqlModel.name}Condition
+{
+
+#foreach($item in ${sqlModel.params})
+
+	private ${item.type} $StringUtil.toLowerCaseInitial( $item.name);   
+#end
+#foreach($item in ${sqlModel.params})
+
+	public ${item.type} get$StringUtil.toUpperCaseInitial( $item.name)() {
+		return $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+	public void set$StringUtil.toUpperCaseInitial( $item.name)(${item.type} $StringUtil.toLowerCaseInitial( $item.name)) {
+		this.$StringUtil.toLowerCaseInitial( $item.name) = $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+#end
+}

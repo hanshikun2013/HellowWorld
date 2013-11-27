@@ -1,0 +1,33 @@
+#foreach($tableModel in ${mappingModel.tableModels})
+
+{
+	TableModel:$tableModel.name
+#foreach($tableModelItem in ${tableModel.items})
+		{
+			modelId : $tableModelItem.modelId
+			input : $tableModelItem.input
+			key : $tableModelItem.key
+			remark : $tableModelItem.remark
+			type : $tableModelItem.type
+			charNum : $tableModelItem.charNum
+		}
+#end
+}
+#end
+#foreach($dataModel in ${mappingModel.dataModels})
+
+{
+	DataModel:$dataModel.name
+#foreach($dataModelItem in ${dataModel.items})
+		{
+			Name : $dataModelItem.Name
+			ColLogical : $dataModelItem.ColLogical
+			ColPhysical : $dataModelItem.ColPhysical
+			Attr : $dataModelItem.Attr
+			CharNum : $dataModelItem.CharNum
+			DecPoint : $dataModelItem.DecPoint
+			Remark : $dataModelItem.Remark
+		}
+#end	
+}
+#end

@@ -1,0 +1,39 @@
+package ${packageController};
+
+import java.util.List;
+
+import javax.ws.rs.POST;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import jp.co.axa.life.fw.controller.BaseController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+
+import ${package_model}.${sqlModel.name}JsonCondition;
+import ${package_model}.${sqlModel.name}JsonRecord;
+import ${packageService}.${sqlModel.name}IService;
+
+@Controller("$StringUtil.toLowerCaseInitial(${sqlModel.name})Controller")
+@Path("/Sync/${sqlModel.name}")
+@Component
+public class ${sqlModel.name}Controller extends BaseController 
+{
+    @Autowired
+    private ${sqlModel.name}IService $StringUtil.toLowerCaseInitial(${sqlModel.name})Service;
+	/**
+	 * 
+	 * @param condition
+	 * @return
+	 */
+	@POST()
+	@Path("/select")
+    @Produces("application/json; charset=UTF-8")
+	public List<${sqlModel.name}JsonRecord> selectByCondition(${sqlModel.name}JsonCondition condition) {
+		return ${StringUtil.toLowerCaseInitial(${sqlModel.name})}Service.selectByCondition(condition);
+	}
+	
+}

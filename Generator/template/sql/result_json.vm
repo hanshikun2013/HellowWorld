@@ -1,0 +1,30 @@
+package ${package_model};
+
+import jp.co.axa.life.fw.model.Entity;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
+
+@XmlRootElement(name = "${StringUtil.toLowerCaseInitial( $sqlModel.name)}JsonRecord")
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ${sqlModel.name}JsonRecord  implements Entity 
+{
+
+#foreach($item in ${sqlModel.results})
+
+    @JsonProperty("${item.column}")
+	private ${item.type} $StringUtil.toLowerCaseInitial( $item.name);   
+#end
+#foreach($item in ${sqlModel.results})
+
+	public ${item.type} get$StringUtil.toUpperCaseInitial( $item.name)() {
+		return $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+	public void set$StringUtil.toUpperCaseInitial( $item.name)(${item.type} $StringUtil.toLowerCaseInitial( $item.name)) {
+		this.$StringUtil.toLowerCaseInitial( $item.name) = $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+#end
+}

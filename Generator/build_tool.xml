@@ -1,0 +1,101 @@
+<project name="Generator" default="all" xmlns:ivy="antlib:org.apache.ivy.ant">
+	<property file="build.properties" />
+	<property name="lib.dir" value="lib" />
+	<property name="build.dir" value="build" />
+	<property name="src.dir" value="src" />
+	 <property name="dist.dir" location="${dist}"/>
+	  
+
+	<path id="lib.path.id">
+		<fileset dir="${lib.dir}" />
+	</path>
+
+	<path id="classlib">
+		<pathelement path="${src.dir}" />
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<!--
+	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
+	</target>
+	-->
+	<target name="all" depends="deletegen,init,call.TableModel2DataModelGenerator,copy">
+	</target>
+	
+	<target name="call.SampleGenerator">
+		<java classname="groovy.ui.GroovyMain" fork="yes" >
+			<classpath refid="classlib" />
+			<arg value="--encoding=UTF-8" />
+			<arg value="src/script/SampleGenerator.groovy" />
+			<arg value="${sqlPath}" />
+			<arg value="${dist.dir}" />
+		</java>
+	</target>
+	<target name="call.TableModel2DataModelGenerator">
+		<java classname="groovy.ui.GroovyMain" fork="yes" >
+			<classpath refid="classlib" />
+			<arg value="--encoding=UTF-8" />
+			<arg value="src/script/TableModel2DataModelGenerator.groovy" />
+			<arg value="${sqlPath}" />
+			<arg value="${dist.dir}" />
+		</java>
+	</target>	
+	
+		
+	
+	<target name="call.MybatisGeneratorForSql">
+		<java classname="groovy.ui.GroovyMain" fork="yes">
+			<classpath refid="classlib" />
+			<arg value="--encoding=UTF-8" />
+			<arg value="src/script/MybatisGeneratorForSql.groovy" />
+			<arg value="${sqlPath}" />
+			<arg value="${dist.dir}" />
+		</java>
+	</target>
+	
+	<target name="call.BuildDictionary">
+		<java classname="groovy.ui.GroovyMain" fork="yes" maxmemory="512m">
+			<classpath refid="classlib" />
+			<arg value="--encoding=UTF-8" />
+			<arg value="src/script/BuildDictionary.groovy" />
+			<arg value="${sqlPath}" />
+			<arg value="${dist.dir}" />
+		</java>
+	</target>
+	
+	
+	
+	
+	 <target name="copy">
+	    <copy todir="C:/Users/cap/git/newnavi-back/AxaNavi" >
+	      <fileset dir="${dist.dir}">
+	      	<!-- 
+	        <exclude name="test/**/*"/>
+	        <exclude name="test"/>
+	        -->
+	      </fileset>
+	    </copy>
+	  </target>
+	 <target name="init">
+	 	<delete verbose="true" includeemptydirs="false">
+	 		 <fileset dir="${dist.dir}"/>
+	 		</delete>
+	  </target>
+	
+	 <target name="deletegen">
+	 	<delete includeemptydirs="true">
+	 	    <fileset dir="C:/Users/cap/git/newnavi-back/AxaNavi/src" defaultexcludes="false">
+	 	       <include name="**/gen/**" />
+	 	    </fileset>
+	 	</delete>
+	 	
+	 	<!-- 
+	 	<delete verbose="true" includeemptydirs="true">
+	 		<fileset dir="C:/Users/cap/git/newnavi-back/AxaNavi/src" includes="**/gen/*"/>
+		</delete>
+	 	-->
+	  </target>
+	
+	
+</project>

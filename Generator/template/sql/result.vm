@@ -1,0 +1,21 @@
+package ${packageResult};
+
+public class ${sqlModel.name}Record
+{
+
+#foreach($item in ${sqlModel.results})
+
+	private ${item.type} $StringUtil.toLowerCaseInitial( $item.name);   
+#end
+#foreach($item in ${sqlModel.results})
+
+	public ${item.type} get$StringUtil.toUpperCaseInitial( $item.name)() {
+		return $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+	public void set$StringUtil.toUpperCaseInitial( $item.name)(${item.type} $StringUtil.toLowerCaseInitial( $item.name)) {
+		this.$StringUtil.toLowerCaseInitial( $item.name) = $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+#end
+}

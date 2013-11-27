@@ -1,0 +1,11 @@
+package ${packageMapper};
+
+import ${packageParameter}.${sqlModel.name}Condition;
+import ${packageResult}.${sqlModel.name}Record;
+import java.util.List;
+
+public interface ${sqlModel.name}Mapper
+{
+    public List<${sqlModel.name}Record> selectByCondition(${sqlModel.name}Condition condition);
+
+}

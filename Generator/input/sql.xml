@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<config>
+	<jdbcConnection connectionURL="jdbc:oracle:thin:@localhost:1521:XE"
+		userId="USER01" password="USER01PW">
+	</jdbcConnection>
+	<package  
+	dao="jp.co.axa.life.app.lt.dao.gen" 
+	controller="jp.co.axa.life.app.lt.controller.gen"
+	service="jp.co.axa.life.app.lt.service.gen"
+	service_interface="jp.co.axa.life.app.lt.service.gen"
+	dao_test="jp.co.axa.life.app.lt.dao.test.gen"
+	json_model="jp.co.axa.life.app.lt.model.gen"
+	service_test="jp.co.axa.life.app.lt.service.test.gen"
+	controller_test="jp.co.axa.life.app.lt.controller.test.gen"
+	dao_test_resource="jp.co.axa.life.app.lt.dao.resource.gen"
+	service_test_resource="jp.co.axa.life.app.lt.service.resource.gen"
+	controller_test_resource="jp.co.axa.life.app.lt.controller.resource.gen"
+	mapper="jp.co.axa.life.app.lt.mapper.gen" 
+	xml="jp.co.axa.life.app.lt.sql.gen" 
+	parameter="jp.co.axa.life.app.lt.parameter.gen"
+	result="jp.co.axa.life.app.lt.result.gen" />
+	<sqls>
+		<sql id="Kihon">
+			<params>
+				   
+				 <param index="0" name="planId" type="String"/>
+				 <param index="1" name="planId" type="String"/>
+				 <param index="2" name="planId" type="String"/>
+			</params>
+			<results>
+			<!-- 
+				<result index="0" name="planId" type="String"/> 
+				-->
+			</results>
+			<text>
+			
+			SELECT 
+			--法人基本情報
+			  BASE.KIHON_PLAN_ID                      KIHON_PLAN_ID
+			 ,BASE.KIHON_AGENT_ID                     KIHON_AGENT_ID
+			 ,BASE.KIHON_CUST_ID                      KIHON_CUST_ID
+			 ,BASE.KIHON_BUNSEKI_SB_CD                KIHON_BUNSEKI_SB_CD
+			 ,BASE.KIHON_BUNSEKI_CREATE_DATE          KIHON_BUNSEKI_CREATE_DATE
+			 ,BASE.KIHON_BUNSEKI_UPDATE_DATE          KIHON_BUNSEKI_UPDATE_DATE
+			 ,BASE.KIHON_CORP_NAME                    KIHON_CORP_NAME
+			 ,BASE.KIHON_CORP_NAME_KANA               KIHON_CORP_NAME_KANA
+			 ,BASE.KIHON_CORP_JIKKOUZEI_RT            KIHON_CORP_JIKKOUZEI_RT
+			 ,BASE.KIHON_NYUSHA_AGE                   KIHON_NYUSHA_AGE
+			 ,BASE.KIHON_YAKUIN_SHUNIN_AGE            KIHON_YAKUIN_SHUNIN_AGE
+			 ,BASE.KIHON_EP_KANYU_AGE                 KIHON_EP_KANYU_AGE
+			 ,BASE.KIHON_GENZAI_HOSHU_GETSUGAKU       KIHON_GENZAI_HOSHU_GETSUGAKU
+			 ,BASE.KIHON_YUTAI_YSHOSHU_GETSUGAKU      KIHON_YUTAI_YSHOSHU_GETSUGAKU
+			 ,BASE.KIHON_KOSEKI_BAI_RT                KIHON_KOSEKI_BAI_RT
+			 ,BASE.KIHON_YUTAI_YOSOKU_AGE             KIHON_YUTAI_YOSOKU_AGE
+			 ,BASE.KIHON_KIBO_YAKUIN_TIROKIN          KIHON_KIBO_YAKUIN_TIROKIN
+			 ,BASE.KIHON_BUNSEKI_COMMENT              KIHON_BUNSEKI_COMMENT
+			 ,BASE.KIHON_SYSTEM_CREATE_DATE           KIHON_SYSTEM_CREATE_DATE
+			 ,BASE.KIHON_SYSTEM_UPDATE_DATE           KIHON_SYSTEM_UPDATE_DATE
+			--法人プラン家族
+			 ,BASE.FAM_PLAN_ID                      FAM_PLAN_ID
+			 ,BASE.FAM_FAMILY_CD                    FAM_FAMILY_CD
+			 ,BASE.FAM_FAMILY_NAME_KANJI            FAM_FAMILY_NAME_KANJI
+			 ,BASE.FAM_FAMILY_NAME_KANA             FAM_FAMILY_NAME_KANA
+			 ,BASE.FAM_BIRTH                        FAM_BIRTH
+			 ,BASE.FAM_AGE                          FAM_AGE
+			 ,BASE.FAM_BIRTH_AGE_SELECT_CD          FAM_BIRTH_AGE_SELECT_CD
+			 ,BASE.FAM_ZOKUGARA_CD                  FAM_ZOKUGARA_CD
+			 ,BASE.FAM_SEX_CD                       FAM_SEX_CD
+			 ,BASE.FAM_JOB_CD                       FAM_JOB_CD
+			 ,BASE.FAM_NENSHU                       FAM_NENSHU
+			 ,BASE.FAM_TAISHOKU_PLAN_AGE            FAM_TAISHOKU_PLAN_AGE
+			 ,BASE.FAM_HEIKIN_YOMEI                 FAM_HEIKIN_YOMEI
+			 ,BASE.FAM_IMEJI_GAZOU_CD               FAM_IMEJI_GAZOU_CD
+			 ,BASE.FAM_SYSTEM_CREATE_DATE           FAM_SYSTEM_CREATE_DATE
+			 ,BASE.FAM_SYSTEM_UPDATE_DATE           FAM_SYSTEM_UPDATE_DATE
+			--法人プラン家族年金詳細
+			 ,DET.PLAN_ID                        DET_PLAN_ID
+			 ,DET.FAMILY_CD                      DET_FAMILY_CD
+			 ,DET.GYO_NO                         DET_GYO_NO
+			 ,DET.NENKIN_TYPE_CD                 DET_NENKIN_TYPE_CD
+			 ,DET.START_NENGETSU                 DET_START_NENGETSU
+			 ,DET.AGE_FROM                       DET_AGE_FROM
+			 ,DET.END_NENGETSU                   DET_END_NENGETSU
+			 ,DET.AGE_TO                         DET_AGE_TO
+			 ,DET.KANYU_TSUKISU                  DET_KANYU_TSUKISU
+			 ,DET.NENSHU                         DET_NENSHU
+			 ,DET.SYSTEM_CREATE_DATE             DET_SYSTEM_CREATE_DATE
+			 ,DET.SYSTEM_UPDATE_DATE             DET_SYSTEM_UPDATE_DATE
+			FROM (
+			SELECT 
+			  KIHON.PLAN_ID                      KIHON_PLAN_ID
+			 ,KIHON.AGENT_ID                     KIHON_AGENT_ID
+			 ,KIHON.CUST_ID                      KIHON_CUST_ID
+			 ,KIHON.BUNSEKI_SB_CD                KIHON_BUNSEKI_SB_CD
+			 ,KIHON.BUNSEKI_CREATE_DATE          KIHON_BUNSEKI_CREATE_DATE
+			 ,KIHON.BUNSEKI_UPDATE_DATE          KIHON_BUNSEKI_UPDATE_DATE
+			 ,KIHON.CORP_NAME                    KIHON_CORP_NAME
+			 ,KIHON.CORP_NAME_KANA               KIHON_CORP_NAME_KANA
+			 ,KIHON.CORP_JIKKOUZEI_RT            KIHON_CORP_JIKKOUZEI_RT
+			 ,KIHON.NYUSHA_AGE                   KIHON_NYUSHA_AGE
+			 ,KIHON.YAKUIN_SHUNIN_AGE            KIHON_YAKUIN_SHUNIN_AGE
+			 ,KIHON.EP_KANYU_AGE                 KIHON_EP_KANYU_AGE
+			 ,KIHON.GENZAI_HOSHU_GETSUGAKU       KIHON_GENZAI_HOSHU_GETSUGAKU
+			 ,KIHON.YUTAI_YSHOSHU_GETSUGAKU      KIHON_YUTAI_YSHOSHU_GETSUGAKU
+			 ,KIHON.KOSEKI_BAI_RT                KIHON_KOSEKI_BAI_RT
+			 ,KIHON.YUTAI_YOSOKU_AGE             KIHON_YUTAI_YOSOKU_AGE
+			 ,KIHON.KIBO_YAKUIN_TIROKIN          KIHON_KIBO_YAKUIN_TIROKIN
+			 ,KIHON.BUNSEKI_COMMENT              KIHON_BUNSEKI_COMMENT
+			 ,KIHON.SYSTEM_CREATE_DATE           KIHON_SYSTEM_CREATE_DATE
+			 ,KIHON.SYSTEM_UPDATE_DATE           KIHON_SYSTEM_UPDATE_DATE
+			 ,FAM.PLAN_ID                        FAM_PLAN_ID
+			 ,FAM.FAMILY_CD                      FAM_FAMILY_CD
+			 ,FAM.FAMILY_NAME_KANJI              FAM_FAMILY_NAME_KANJI
+			 ,FAM.FAMILY_NAME_KANA               FAM_FAMILY_NAME_KANA
+			 ,FAM.BIRTH                          FAM_BIRTH
+			 ,FAM.AGE                            FAM_AGE
+			 ,FAM.BIRTH_AGE_SELECT_CD            FAM_BIRTH_AGE_SELECT_CD
+			 ,FAM.ZOKUGARA_CD                    FAM_ZOKUGARA_CD
+			 ,FAM.SEX_CD                         FAM_SEX_CD
+			 ,FAM.JOB_CD                         FAM_JOB_CD
+			 ,FAM.NENSHU                         FAM_NENSHU
+			 ,FAM.TAISHOKU_PLAN_AGE              FAM_TAISHOKU_PLAN_AGE
+			 ,FAM.HEIKIN_YOMEI                   FAM_HEIKIN_YOMEI
+			 ,FAM.IMEJI_GAZOU_CD                 FAM_IMEJI_GAZOU_CD
+			 ,FAM.SYSTEM_CREATE_DATE             FAM_SYSTEM_CREATE_DATE
+			 ,FAM.SYSTEM_UPDATE_DATE             FAM_SYSTEM_UPDATE_DATE
+			FROM
+			  T_CORP_KIHON_INFO        KIHON
+			 ,T_CORP_PFAMLY            FAM
+			WHERE
+			     KIHON.PLAN_ID     = ?
+			 AND FAM.PLAN_ID(+)    = ?
+			 AND KIHON.PLAN_ID     = FAM.PLAN_ID(+)
+			) BASE
+			, T_CORP_PFAMLY_NENKIN_DET DET
+			WHERE 
+			  DET.PLAN_ID(+)         = ?
+			  AND BASE.FAM_PLAN_ID   = DET.PLAN_ID(+)
+			  AND BASE.FAM_FAMILY_CD = DET.FAMILY_CD(+)
+			</text>
+			
+			
+		</sql>
+
+<sql id="Risk">
+			<params>
+				 <param index="0" name="planId" type="String"/>
+			</params>
+			<results>
+			<!-- 
+				<result index="0" name="planId" type="String"/> 
+				-->
+			</results>
+			<text>
+			SELECT 
+			--法人経営者リスク分析
+			  BSK.PLAN_ID	BSK_PLAN_ID
+			 ,BSK.KARIRE_SOTOGAKU	BSK_KARIRE_SOTOGAKU
+			 ,BSK.CHOIKIN_SANSHUTSU_KB_CD	BSK_CHOIKIN_SANSHUTSU_KB_CD
+			 ,BSK.KENAOSI_SHIKIN_SB_CD	BSK_KENAOSI_SHIKIN_SB_CD
+			 ,BSK.JUGYOIN_KYUYO	BSK_JUGYOIN_KYUYO
+			 ,BSK.JUGYOIN_KYUYO_HYOGETU	BSK_JUGYOIN_KYUYO_HYOGETU
+			 ,BSK.KENAOSI_SHIKIN	BSK_KENAOSI_SHIKIN
+			 ,BSK.URIAGEDAKA_YOSOU	BSK_URIAGEDAKA_YOSOU
+			 ,BSK.M1NGO_URIYOSO_RT	BSK_M1NGO_URIYOSO_RT
+			 ,BSK.M2NGO_URIYOSO_RT	BSK_M2NGO_URIYOSO_RT
+			 ,BSK.M3NGO_URIYOSO_RT	BSK_M3NGO_URIYOSO_RT
+			 ,BSK.GYOSHU_CD	BSK_GYOSHU_CD
+			 ,BSK.JUGYOINSU	BSK_JUGYOINSU
+			 ,BSK.SYSTEM_CREATE_DATE	BSK_SYSTEM_CREATE_DATE
+			 ,BSK.SYSTEM_UPDATE_DATE	BSK_SYSTEM_UPDATE_DATE
+			FROM
+			  T_CORP_KEIEISHA_RBUNSEKI  BSK
+			WHERE
+			     BSK.PLAN_ID    = ?
+			ORDER BY BSK.PLAN_ID
+			
+			</text>
+			
+			
+		</sql>
+<sql id="CashFlow">
+			<params>
+				 <param index="0" name="planId" type="String"/>
+			</params>
+			<results>
+			<!-- 
+				<result index="0" name="planId" type="String"/> 
+				-->
+			</results>
+			<text>
+			SELECT 
+			--法人キャッシュフロー改善
+			  KAI.PLAN_ID               KAI_PLAN_ID
+			 ,KAI.SAGE_KINGAKU          KAI_SAGE_KINGAKU
+			 ,KAI.SKHK_HOKEN_SHURUI_CD  KAI_SKHK_HOKEN_SHURUI_CD
+			 ,KAI.SYSTEM_CREATE_DATE    KAI_SYSTEM_CREATE_DATE
+			 ,KAI.SYSTEM_UPDATE_DATE    KAI_SYSTEM_UPDATE_DATE
+			
+			FROM
+			  T_CORP_CASHF_KAIZE          KAI
+			WHERE
+			     KAI.PLAN_ID    = ?
+			ORDER BY KAI.PLAN_ID
+			
+			</text>
+			
+			
+		</sql>
+	</sqls>
+</config>

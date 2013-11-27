@@ -1,0 +1,76 @@
+package $copierPackage;
+
+#foreach($dataModelName in ${mappingModel.dataModelList})
+import $dataModelPackage.$dataModelName;
+#end
+#foreach($tableModelName in ${mappingModel.tableModelList})
+import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
+#end
+
+
+class Datamodel2TableCopier{
+	/*
+	 * TODO:
+	 */
+	private static Object convert(Class clazz,String obj){
+		if(clazz.equals(String.class)){
+			if(obj==null) return "";
+			return obj.toString();	
+		}
+		if(clazz.equals(java.math.BigDecimal.class)){
+			if(obj==null) return "";
+			return obj.toString();	
+		}
+		throw new RuntimeException("TODO");
+	}
+
+#foreach($funcModel in ${mappingModel.funcs})
+#foreach($funcGroupModel in ${funcModel.items})
+#set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
+#set ( $methodname = $StringUtil.getMappingName($orgmethod) )
+#set ( $param = $StringUtil.joinParams($funcGroupModel.dataModelList) )
+
+	/*
+	 * データ変換処理：
+	 * ${funcModel.name} : ${funcGroupModel.name}
+	 */
+	static public $StringUtil.toCamelCase($funcGroupModel.name) ${methodname}($param){
+		$StringUtil.toCamelCase($funcGroupModel.name) result=new $StringUtil.toCamelCase($funcGroupModel.name)();
+#foreach($item in ${funcGroupModel.items})
+		{
+			//テーブル.テーブル(物理/論理) : $item.get("テーブル.テーブル(物理/論理)")
+			//テーブル.項目名(論理)" : $item.get("テーブル.項目名(論理)")
+			//テーブル.項目名(物理) : $item.get("テーブル.項目名(物理)")
+			//テーブル.属性 : $item.get("テーブル.属性")
+			//テーブル.桁数 : $item.get("テーブル.桁数")
+			//テーブル.少数 : $item.get("テーブル.少数")
+			//テーブル.備考 : $StringUtil.cleanUpString($item.get("テーブル.備考"))
+			//画面データモデル.モデルID/概要 : $item.get("画面データモデル.モデルID/概要")
+			//画面データモデル.入力 : $item.get("画面データモデル.入力")
+			//画面データモデル.key名 : $item.get("画面データモデル.key名")
+			//画面データモデル.型 : $item.get("画面データモデル.型")
+			//画面データモデル.備考 :  $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
+#set ($physicalName =	$item.get("テーブル.項目名(物理)") )
+#set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toCamelCase($physicalName)) )
+#set ($setTableMethod = "set$method")
+#set ( $attr = $item.get("テーブル.属性") )
+#set ( $convertClass = $StringUtil.getTypeName($attr) )
+#set ( $keyName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
+#set ($getDataMethod = "get$keyName")
+#set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
+#if($keyName==""	)
+			//TODO:
+			//result.$setTableMethod(($convertClass)convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
+#else
+			result.$setTableMethod(($convertClass)convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
+#end
+		}
+#end
+
+		return result;
+
+	}
+#end
+#end
+
+}

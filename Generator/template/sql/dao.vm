@@ -1,0 +1,24 @@
+package ${packageDao};
+
+import java.util.List;
+import org.springframework.stereotype.Repository;
+
+import jp.co.axa.life.fw.dao.BaseDao;
+
+import ${packageMapper}.${sqlModel.name}Mapper;
+import ${packageParameter}.${sqlModel.name}Condition;
+import ${packageResult}.${sqlModel.name}Record;
+
+@Repository
+public class ${sqlModel.name}Dao extends BaseDao 
+{
+	/**
+	 * 
+	 * @param condition
+	 * @return
+	 */
+	public List<${sqlModel.name}Record> selectByCondition(${sqlModel.name}Condition condition) {
+		return getSqlSession().getMapper(${sqlModel.name}Mapper.class).selectByCondition(condition);
+	}
+	
+}

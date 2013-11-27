@@ -1,0 +1,16 @@
+package ${packageService};
+
+import java.util.List;
+
+import ${package_model}.${sqlModel.name}JsonCondition;
+import ${package_model}.${sqlModel.name}JsonRecord;
+
+public interface ${sqlModel.name}IService {
+	/**
+	 * 
+	 * @param condition
+	 * @return
+	 */
+	public List<${sqlModel.name}JsonRecord> selectByCondition(${sqlModel.name}JsonCondition condition);
+	
+}

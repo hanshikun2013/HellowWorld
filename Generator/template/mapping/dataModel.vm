@@ -1,0 +1,32 @@
+package $dataModelPackage;
+import org.codehaus.jackson.annotate.JsonProperty;
+
+public class 	$StringUtil.toUpperCaseInitial($dataModel.name)
+{
+#foreach($item in ${dataModel.items})
+    /**
+     * $item.input
+     */
+ 	@JsonProperty("$item.key")
+	private ${item.classType} $StringUtil.toLowerCaseInitial( $item.key);   
+#end
+#foreach($item in ${dataModel.items})
+
+	/**
+	 * $item.inputを取得します。
+	 * @return $item.input
+	 */
+	public ${item.classType} get$StringUtil.toUpperCaseInitial( $item.key)() {
+		return $StringUtil.toLowerCaseInitial( $item.key);
+	}
+	
+	/**
+	 * $item.inputを設定します。
+	 * @param $item.key $item.input
+	 */
+	public void set$StringUtil.toUpperCaseInitial( $item.key)(${item.classType} $StringUtil.toLowerCaseInitial( $item.key)) {
+		this.$StringUtil.toLowerCaseInitial( $item.key) = $StringUtil.toLowerCaseInitial( $item.key);
+	}
+#end
+}	
+
