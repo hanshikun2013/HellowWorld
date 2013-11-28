@@ -65,3 +65,4 @@ for(dataModel in excel.table2DataSheet.mappingModel.dataModels){
 }
 new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+"Table2DatamodelCopier.java")
 
+new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")

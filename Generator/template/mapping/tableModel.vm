@@ -1,5 +1,5 @@
 package $tableModelPackage;
-
+//template:tableModel.vm
 public class 	$StringUtil.toCamelCase($tableModel.name)
 {
 #foreach($item in ${tableModel.items})
@@ -17,7 +17,11 @@ public class 	$StringUtil.toCamelCase($tableModel.name)
     /**
      * $item.physicalName : $item.logicalName
      */
+#if($attr==""	)
+	//private $type $StringUtil.toLowerCaseInitial( $attr);   
+#else
 	private $type $StringUtil.toLowerCaseInitial( $attr);   
+#end	 
 #end
 #foreach($item in ${tableModel.items})
 #set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.physicalName)) )
@@ -27,16 +31,30 @@ public class 	$StringUtil.toCamelCase($tableModel.name)
 	 * $item.logicalNameを取得します。
 	 * @return $item.logicalName
 	 */
+#if($attr==""	)
+//	public $type get$StringUtil.toUpperCaseInitial( $attr)() {
+//		return $StringUtil.toLowerCaseInitial( $attr);
+//	}
+#else
 	public $type get$StringUtil.toUpperCaseInitial( $attr)() {
 		return $StringUtil.toLowerCaseInitial( $attr);
 	}
+#end
 	
 	/**
 	 * $item.logicalNameを設定します。
 	 * @param $attr $item.physicalName
 	 */
+#if($attr==""	)
+//	public void set$StringUtil.toUpperCaseInitial( $attr)($type $StringUtil.toLowerCaseInitial( $attr)) {
+//		this.$StringUtil.toLowerCaseInitial( $attr) = $StringUtil.toLowerCaseInitial( $attr);
+//	}
+#else
 	public void set$StringUtil.toUpperCaseInitial( $attr)($type $StringUtil.toLowerCaseInitial( $attr)) {
 		this.$StringUtil.toLowerCaseInitial( $attr) = $StringUtil.toLowerCaseInitial( $attr);
 	}
 #end
+#end
 }
+
+

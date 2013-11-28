@@ -1,4 +1,5 @@
 package $dataModelPackage;
+//template:dataModel.vm
 import org.codehaus.jackson.annotate.JsonProperty;
 
 public class 	$StringUtil.toUpperCaseInitial($dataModel.name)

@@ -1,5 +1,5 @@
 package sample.table.entity.gen;
-
+//template:tableModel.vm
 public class 	TCorpPlanFamily
 {
 
@@ -339,3 +339,5 @@ public class 	TCorpPlanFamily
 		this.systemUpdateDate = systemUpdateDate;
 	}
 }
+
+

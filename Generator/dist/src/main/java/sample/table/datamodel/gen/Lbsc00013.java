@@ -1,4 +1,5 @@
 package sample.table.datamodel.gen;
+//template:dataModel.vm
 import org.codehaus.jackson.annotate.JsonProperty;
 
 public class 	Lbsc00013

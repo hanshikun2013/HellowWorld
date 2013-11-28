@@ -1,5 +1,5 @@
 package sample.table.entity.gen;
-
+//template:tableModel.vm
 public class 	TCorpCashfKaize
 {
 
@@ -108,3 +108,5 @@ public class 	TCorpCashfKaize
 		this.systemUpdateDate = systemUpdateDate;
 	}
 }
+
+

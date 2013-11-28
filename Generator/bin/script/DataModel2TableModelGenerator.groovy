@@ -12,7 +12,7 @@ import tool.model.datamodel2table.Data2TableExcel
 //String path =args[0]
 //String outputPath=args[1]
 //String template = "./template"
-String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/法人統合_テーブル←データモデルマッピング_no_formula.xlsx"
+String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/法人統合_テーブル←データモデルマッピング.xlsx"
 
 String outputPath="C:/Users/cap/git/HellowWorld/Generator/dist"
 String template = "C:/Users/cap/git/HellowWorld/Generator/template"
@@ -52,4 +52,6 @@ for(dataModel in excel.table2DataSheet.mappingModel.dataModels){
 	new TemplateGenerator(template).generateFile(context, "mapping/dataModel.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+StringUtil.toUpperCaseInitial(dataModel.name)+".java")
 }
 new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+"Datamodel2TableCopier.java")
+
+new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
 

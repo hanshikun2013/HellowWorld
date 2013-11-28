@@ -1,5 +1,5 @@
 package sample.table.entity.gen;
-
+//template:tableModel.vm
 public class 	TCorpPfamlyNenkinDet
 {
 
@@ -255,3 +255,5 @@ public class 	TCorpPfamlyNenkinDet
 		this.systemUpdateDate = systemUpdateDate;
 	}
 }
+
+

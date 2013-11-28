@@ -20,7 +20,7 @@
 	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
 	</target>
 	-->
-	<target name="all" depends="deletegen,init,call.MybatisGeneratorForSql,call.DataModel2TableModelGenerator,call.DataModel2TableModelGenerator,copy">
+	<target name="all" depends="deletegen,init,call.MybatisGeneratorForSql,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
 	</target>
 	
 	<target name="call.SampleGenerator">
@@ -79,7 +79,7 @@
 	
 	
 	 <target name="copy">
-	    <copy todir="C:/Users/cap/git/newnavi-back/AxaNavi" >
+	    <copy todir="C:/workspaceSSS/workspace/AxaNavi" >
 	      <fileset dir="${dist.dir}">
 	      	<!-- 
 	        <exclude name="test/**/*"/>
@@ -95,13 +95,14 @@
 	  </target>
 	
 	 <target name="deletegen">
-	 	<delete includeemptydirs="true">
-	 	    <fileset dir="C:/Users/cap/git/newnavi-back/AxaNavi/src" defaultexcludes="false">
+	 	<!-- 
+	 		 	<delete includeemptydirs="true">
+	 	    <fileset dir="C:/workspaceSSS/workspace/AxaNavi/src" defaultexcludes="false">
 	 	       <include name="**/gen/**" />
 	 	    </fileset>
 	 	</delete>
 	 	
-	 	<!-- 
+	
 	 	<delete verbose="true" includeemptydirs="true">
 	 		<fileset dir="C:/Users/cap/git/newnavi-back/AxaNavi/src" includes="**/gen/*"/>
 		</delete>
