@@ -1,0 +1,33 @@
+package $dataModelPackage;
+
+import jp.co.axa.life.fw.model.Entity;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
+
+@XmlRootElement(name = "dataModelRoot")
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class  DataModelRoot implements Entity {
+
+#foreach($item in ${mappingModel.dataModels})
+
+	/*
+	*
+	*/
+	@JsonProperty("$StringUtil.toLowerCaseInitial($item.name)")
+	private $StringUtil.toUpperCaseInitial($item.name) $StringUtil.toLowerCaseInitial($item.name) ;
+#end
+
+#foreach($item in ${mappingModel.dataModels})
+
+	public $StringUtil.toUpperCaseInitial($item.name) get$StringUtil.toUpperCaseInitial( $item.name)() {
+		return $StringUtil.toLowerCaseInitial($item.name);
+	}
+
+	public void set${StringUtil.toUpperCaseInitial($item.name)}( $StringUtil.toUpperCaseInitial($item.name) $StringUtil.toLowerCaseInitial($item.name)) {
+		this.$StringUtil.toLowerCaseInitial($item.name) = $StringUtil.toLowerCaseInitial( $item.name);
+	}
+
+#end
+}
