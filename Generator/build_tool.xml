@@ -20,7 +20,7 @@
 	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
 	</target>
 	-->
-	<target name="all" depends="deletegen,init,call.MybatisGeneratorForSql,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
+	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
 	</target>
 	
 	<target name="call.SampleGenerator">

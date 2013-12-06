@@ -1,3 +1,12 @@
+#foreach($funcModel in ${mappingModel.funcs})
+#foreach($funcGroupModel in ${funcModel.items})
+#set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
+#set ( $methodname = $StringUtil.getMappingName($orgmethod) )
+	$methodname
+#end
+#end
+
+
 #foreach($tableModel in ${mappingModel.tableModels})
 
 {

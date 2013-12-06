@@ -13,28 +13,6 @@ import tool.model.datamodel2table.Data2TableExcel
 //String outputPath=args[1]
 //String template = "./template"
 //String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/法人統合_テーブル←データモデルマッピング.xlsx"
-
-LRMS_相続:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_相続_テーブル←データモデルマッピング.xlsx"
-	String tableModelPackage="temp.D2T.souzoku.entity.gen"
-	String dataModelPackage="temp.D2T.souzoku.datamodel.gen"
-	String copierPackage="temp.D2T.souzoku.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
-}
-LRMS_共通:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_共通_テーブル←データモデルマッピング.xlsx"
-	String tableModelPackage="temp.D2T.kyotsu.entity.gen"
-	String dataModelPackage="temp.D2T.kyotsu.datamodel.gen"
-	String copierPackage="temp.D2T.kyotsu.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
-}
-LRMS_介護:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_介護_テーブル←データモデルマッピング.xlsx"
-	String tableModelPackage="temp.D2T.kaigo.entity.gen"
-	String dataModelPackage="temp.D2T.kaigo.datamodel.gen"
-	String copierPackage="temp.D2T.kaigo.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
-}
 //Config.namingMap.put("共通部_T_CORP_PLAN_FAMILY", "method1")
 //Config.namingMap.put("共通部_T_CORP_PFAMLY_NENKIN_DET", "method2")
 //Config.namingMap.put("経営者リスク分析_T_CORP_KIHON_INFO", "method3")
@@ -44,7 +22,26 @@ LRMS_介護:{
 //Config.namingMap.put("キャッシュフロー改善試算_T_CORP_CASHF_KAIZE", "method7")
 //Config.namingMap.put("退職金＋キャッシュフロー改善試算_T_CORP_KIHON_INFO", "method8")
 
-public static  gen(String path,String tableModelPackage,String dataModelPackage,String copierPackage ) {
+LRMS_相続:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_相続_テーブル←データモデルマッピング.xlsx"
+	gen( path, "souzoku")
+}
+LRMS_共通:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_共通_テーブル←データモデルマッピング.xlsx"
+	gen( path, "kyotsu")
+}
+LRMS_介護:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_介護_テーブル←データモデルマッピング.xlsx"
+	gen( path,"kaigo")
+}
+
+
+
+public static  gen(String path,String base ) {
+	 String tableModelPackage=String.format("temp.d2t.%s.entity.gen",base)
+	 String dataModelPackage=String.format("temp.d2t.%s.datamodel.gen",base)
+	 String copierPackage=String.format("temp.d2t.%s.copier.gen",base)
+	 
 	String datamodel2TableCopierName="Datamodel2TableCopier"
 	String outputPath="C:/Users/cap/git/HellowWorld/Generator/dist"
 	String template = "C:/Users/cap/git/HellowWorld/Generator/template"
@@ -60,7 +57,7 @@ public static  gen(String path,String tableModelPackage,String dataModelPackage,
 
 	context.put("datamodel2TableCopierName", datamodel2TableCopierName);
 
-	new TemplateGenerator(template).generateFile(context, "mapping/table2Data.vm",outputPath+"/mapping/table2data/"+"classlist.txt")
+	new TemplateGenerator(template).generateFile(context, "mapping/table2Data.vm",outputPath+"/list/d2t/"+base+"/list.txt")
 
 	for(tableModel in excel.table2DataSheet.mappingModel.tableModels){
 		context.put("tableModel", tableModel);

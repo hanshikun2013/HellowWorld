@@ -56,7 +56,48 @@ public class ${table2DatamodelCopierName}Test{
 		}
 #end	
 		//call convert method
-		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toUpperCaseInitial(${methodname})($param);
+		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
+		//assertions
+		{
+#foreach($item in ${funcGroupModel.items})
+#set ($physicalName =	$item.get("テーブル.項目名(物理)") )
+#set ( $keyName=$StringUtil.toCamelCase($item.get("テーブル.項目名(物理)")	)		)
+#set ( $kName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
+#set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toUpperCaseInitial($kName)) )
+#set ($getDataMethod = "get$method")
+#set ( $attr = "String" )
+#set ( $convertClass = "String" )
+#set ($getTableMethod = "get$keyName")
+#set ($srcObjName = $StringUtil.toPascalCase($item.get("テーブル.テーブル(物理/論理)")))		
+			//TODO
+			assertEquals(null, result.$getDataMethod());
+#end
+		}
+	}
+
+	
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_AllNull(){
+		//Initialize parameters
+#foreach($tableModelName in ${funcGroupModel.tableModelList})
+		$StringUtil.toUpperCaseInitial($tableModelName) $StringUtil.toLowerCaseInitial($tableModelName) =new $StringUtil.toUpperCaseInitial($tableModelName) ();
+		{
+#set ($lookupTableModel =	$mappingModel.lookupTableModelPascal(  $tableModelName) )		
+#foreach($item in ${lookupTableModel.items})
+#set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.physicalName)) )
+#if($attr==""	)
+			//${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#else
+			${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#end#end
+		}
+#end	
+		//call convert method
+		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
 		//assertions
 		{
 #foreach($item in ${funcGroupModel.items})
@@ -80,7 +121,7 @@ public class ${table2DatamodelCopierName}Test{
 	 * Test ${funcModel.name}:${funcGroupModel.name}
 	 */
 	@Test(expected = SystemException.class)
-	public void test$StringUtil.toUpperCaseInitial(${methodname})_NG(){
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_ExceptionExpected(){
 		//Initialize parameters
 #foreach($tableModelName in ${funcGroupModel.tableModelList})
 		$StringUtil.toUpperCaseInitial($tableModelName) $StringUtil.toLowerCaseInitial($tableModelName) =new $StringUtil.toUpperCaseInitial($tableModelName) ();
@@ -98,7 +139,7 @@ public class ${table2DatamodelCopierName}Test{
 		}
 #end	
 		//call convert method
-		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toUpperCaseInitial(${methodname})($param);
+		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
 		//assertions
 	}
 	

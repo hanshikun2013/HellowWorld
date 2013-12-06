@@ -19,43 +19,43 @@ import tool.model.table2datamodel.Table2DataExcel
 //String path =args[0]
 //String outputPath=args[1]
 //String template = "./template"
+//Config.namingMap.put("共通部_PlanFamily", "共通部_PlanFamily")
+//Config.namingMap.put("共通部_LtPension", "共通部_LtPension")
+//Config.namingMap.put("経営者リスク分析_lbsc0009", "経営者リスク分析_lbsc0009")
+//Config.namingMap.put("経営者リスク分析_lbsc0008", "経営者リスク分析_lbsc0008")
+//Config.namingMap.put("経営者リスク分析_lbsc0002", "経営者リスク分析_lbsc0002")
+//Config.namingMap.put("役員退職慰労金試算_lbsc0010", "役員退職慰労金試算_lbsc0010")
+//Config.namingMap.put("役員退職慰労金試算_lbsc0003", "役員退職慰労金試算_lbsc0003")
+//Config.namingMap.put("役員退職慰労金試算_lbsc0004", "役員退職慰労金試算_lbsc0004")
+//Config.namingMap.put("キャッシュフロー改善試算_lbsc00011", "キャッシュフロー改善試算_lbsc00011")
+//Config.namingMap.put("キャッシュフロー改善試算_lbsc00005", "キャッシュフロー改善試算_lbsc00005")
+//Config.namingMap.put("キャッシュフロー改善試算_lbsc00006", "キャッシュフロー改善試算_lbsc00006")
+//Config.namingMap.put("役員退職慰労金試算キャッシュフロー改善試算_lbsc00013", "役員退職慰労金試算キャッシュフロー改善試算_lbsc00013")
+
+
+
 LRMS_相続:{
 	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_相続_データモデル←テーブルマッピング.xlsx"
-	String tableModelPackage="temp.T2D.souzoku.entity.gen"
-	String dataModelPackage="temp.T2D.souzoku.datamodel.gen"
-	String copierPackage="temp.T2D.souzoku.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
+	
+	gen( path, "souzoku" )
 }
 LRMS_共通:{
 	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_共通_データモデル←テーブルマッピング.xlsx"
-	String tableModelPackage="temp.T2D.kyotsu.entity.gen"
-	String dataModelPackage="temp.T2D.kyotsu.datamodel.gen"
-	String copierPackage="temp.T2D.kyotsu.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
+	gen( path, "kyotsu"   )
 }
 LRMS_介護:{
 	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_介護_データモデル←テーブルマッピング.xlsx"
-	String tableModelPackage="temp.T2D.kaigo.entity.gen"
-	String dataModelPackage="temp.T2D.kaigo.datamodel.gen"
-	String copierPackage="temp.T2D.kaigo.copier.gen"
-	gen( path, tableModelPackage, dataModelPackage, copierPackage )
+	gen( path, "kaigo"  )
 }
 
  
-Config.namingMap.put("共通部_PlanFamily", "共通部_PlanFamily")
-Config.namingMap.put("共通部_LtPension", "共通部_LtPension")
-Config.namingMap.put("経営者リスク分析_lbsc0009", "経営者リスク分析_lbsc0009")
-Config.namingMap.put("経営者リスク分析_lbsc0008", "経営者リスク分析_lbsc0008")
-Config.namingMap.put("経営者リスク分析_lbsc0002", "経営者リスク分析_lbsc0002")
-Config.namingMap.put("役員退職慰労金試算_lbsc0010", "役員退職慰労金試算_lbsc0010")
-Config.namingMap.put("役員退職慰労金試算_lbsc0003", "役員退職慰労金試算_lbsc0003")
-Config.namingMap.put("役員退職慰労金試算_lbsc0004", "役員退職慰労金試算_lbsc0004")
-Config.namingMap.put("キャッシュフロー改善試算_lbsc00011", "キャッシュフロー改善試算_lbsc00011")
-Config.namingMap.put("キャッシュフロー改善試算_lbsc00005", "キャッシュフロー改善試算_lbsc00005")
-Config.namingMap.put("キャッシュフロー改善試算_lbsc00006", "キャッシュフロー改善試算_lbsc00006")
-Config.namingMap.put("役員退職慰労金試算キャッシュフロー改善試算_lbsc00013", "役員退職慰労金試算キャッシュフロー改善試算_lbsc00013")
 
-public static  gen(String path,String tableModelPackage,String dataModelPackage,String copierPackage ) {
+
+public static  gen(String path,String base ) {
+	 String tableModelPackage=String.format("temp.t2d.%s.entity.gen",base)
+	 String dataModelPackage=String.format("temp.t2d.%s.datamodel.gen",base)
+	 String copierPackage=String.format("temp.t2d.%s.copier.gen",base)
+ 	
 	String table2DatamodelCopierName="Table2DatamodelCopier"
 	String outputPath="C:/Users/cap/git/HellowWorld/Generator/dist"
 	String template = "C:/Users/cap/git/HellowWorld/Generator/template"
@@ -70,8 +70,8 @@ public static  gen(String path,String tableModelPackage,String dataModelPackage,
 	context.put("StringUtil", new StringUtil());
 	context.put("table2DatamodelCopierName", table2DatamodelCopierName);
 
-	new TemplateGenerator(template).generateFile(context, "mapping/table2Data.vm",outputPath+"/mapping/data2table/"+"classlist.txt")
-
+	new TemplateGenerator(template).generateFile(context, "mapping/table2Data.vm",outputPath+"/list/t2d/"+base+"/list.txt")
+	
 	for(tableModel in excel.table2DataSheet.mappingModel.tableModels){
 		context.put("tableModel", tableModel);
 		new TemplateGenerator(template).generateFile(context, "mapping/tableModel.vm",outputPath+"/src/main/java/"+tableModelPackage.replaceAll("\\.", "/")+"/"+StringUtil.toCamelCase(tableModel.name)+".java")
