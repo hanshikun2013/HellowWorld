@@ -11,12 +11,13 @@ class Data2TableExcel extends BasicExcel {
 		super(path)
 	}
 	public BasicSheet loadSheet(Sheet sheet){
-		if("法人マッピング".equals(sheet.getSheetName())){
+		if(sheet.getSheetName().contains("マッピング")){
 			table2DataSheet=new Data2TableSheet(this);
 			table2DataSheet.parse(sheet)
 			return table2DataSheet;
 		}else{
-			return super.loadSheet(sheet)
+			//return super.loadSheet(sheet)
+		return null;
 		}
 		
 	}

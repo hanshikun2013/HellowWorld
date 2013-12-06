@@ -14,7 +14,7 @@ class FuncGroupModel {
  	public List<String> getDataModelList(){
 		 List<String> checkList=new ArrayList<String>()
 		 for(Map item:items){
-			 String tempName=item.get("画面データモデル.モデルID/概要")
+			 String tempName=item.get("画面データモデル.モデルID/概要")+"Collection"
 			 tempName=StringUtil.toUpperCaseInitial(tempName)
 			 if(ComUtility.isIdentifier(tempName)){
 				 if(!checkList.contains(tempName)){
@@ -39,4 +39,5 @@ class FuncGroupModel {
 		 }
 		 return checkList;
 	 }
+	  
 }

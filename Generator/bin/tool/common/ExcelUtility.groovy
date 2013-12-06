@@ -39,7 +39,7 @@ class ExcelUtility {
 			case Cell.CELL_TYPE_FORMULA:
 				evaluator.evaluateFormulaCell(cell);
 				return cell.getCellFormula();
-			// return cell.getStringCellValue();(※）
+			// return cell.getStringCellValue();//(※）
 			case Cell.CELL_TYPE_NUMERIC:
 				def value =""
 				try {

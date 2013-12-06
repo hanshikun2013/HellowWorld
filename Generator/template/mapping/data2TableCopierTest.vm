@@ -1,0 +1,98 @@
+package $copierPackage;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import jp.co.axa.life.fw.exception.SystemException;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import jp.co.axa.life.app.lt.util.ConverterUtility;
+#foreach($dataModelName in ${mappingModel.dataModelList})
+import $dataModelPackage.$dataModelName;
+#end
+#foreach($tableModelName in ${mappingModel.tableModelList})
+import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
+#end
+
+
+public class ${datamodel2TableCopierName}Test{
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+	
+#foreach($funcModel in ${mappingModel.funcs})
+#foreach($funcGroupModel in ${funcModel.items})
+#set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
+#set ( $methodname = $StringUtil.getMappingName($orgmethod) )
+#set ( $param = $StringUtil.joinCallParams($funcGroupModel.dataModelList) )
+
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_OK(){
+		//Initialize parameters
+#foreach($dataModelName in ${funcGroupModel.dataModelList})
+		$StringUtil.toUpperCaseInitial($dataModelName) $StringUtil.toLowerCaseInitial($dataModelName) =new $StringUtil.toUpperCaseInitial($dataModelName) ();
+		{
+#set ($dataModel =	$mappingModel.lookupDataModel($dataModelName) )		
+#foreach($item in ${dataModel.items})
+			//TODO
+			${StringUtil.toLowerCaseInitial($dataModelName)}.set${StringUtil.toUpperCaseInitial( $item.key)}(null);
+#end
+		}
+#end	
+		
+		//call convert method
+		$StringUtil.toCamelCase($funcGroupModel.name) result=${datamodel2TableCopierName}.$StringUtil.toUpperCaseInitial(${methodname})($param);
+		//assertions
+		{
+#foreach($item in ${funcGroupModel.items})
+#set ($physicalName =	$item.get("テーブル.項目名(物理)") )
+#set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toCamelCase($physicalName)) )
+#set ($getTableMethod = "get$method")
+#set ( $attr = $item.get("テーブル.属性") )
+#set ( $convertClass = $StringUtil.getTypeName($attr) )
+#set ( $keyName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
+#set ($getDataMethod = "get$keyName")
+#set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
+#set ($srcObjName = "${srcObjName}Collection")	
+			//TODO
+			assertEquals(null, result.$getTableMethod());
+#end
+		}
+	}
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test(expected = SystemException.class)
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_NG(){
+		//Initialize parameters
+#foreach($dataModelName in ${funcGroupModel.dataModelList})
+		$StringUtil.toUpperCaseInitial($dataModelName) $StringUtil.toLowerCaseInitial($dataModelName) =new $StringUtil.toUpperCaseInitial($dataModelName) ();
+		{
+#set ($dataModel =	$mappingModel.lookupDataModel($dataModelName) )		
+#foreach($item in ${dataModel.items})
+			//TODO
+			${StringUtil.toLowerCaseInitial($dataModelName)}.set${StringUtil.toUpperCaseInitial( $item.key)}(null);
+#end
+		}
+#end	
+		
+		//call convert method
+		$StringUtil.toCamelCase($funcGroupModel.name) result=${datamodel2TableCopierName}.$StringUtil.toUpperCaseInitial(${methodname})($param);
+	}	
+#end
+#end
+
+}

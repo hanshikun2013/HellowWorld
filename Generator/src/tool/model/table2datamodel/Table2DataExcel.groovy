@@ -11,7 +11,7 @@ class Table2DataExcel extends BasicExcel {
 		super(path)
 	}
 	public BasicSheet loadSheet(Sheet sheet){
-		if("法人マッピング".equals(sheet.getSheetName())){
+		if(sheet.getSheetName().contains("マッピング")){
 			table2DataSheet=new Table2DataSheet(this);
 			table2DataSheet.parse(sheet)
 			return table2DataSheet;

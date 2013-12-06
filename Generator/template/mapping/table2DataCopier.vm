@@ -1,5 +1,6 @@
 package $copierPackage;
 
+import jp.co.axa.life.app.lt.util.ConverterUtility;
 #foreach($dataModelName in ${mappingModel.dataModelList})
 import $dataModelPackage.$dataModelName;
 #end
@@ -8,27 +9,8 @@ import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
 #end
 
 
-class Datamodel2TableCopier{
+class $table2DatamodelCopierName{
 
-	/*
-	 * TODO:共通化する予定
-	 */
-	static class ConverterUtility{
-		/*
-		 * TODO:
-		 */
-		private static Object convert(Class clazz,Object obj){
-			if(clazz.equals(String.class)){
-				if(obj==null) return "";
-				return obj.toString();	
-			}
-			if(clazz.equals(java.math.BigDecimal.class)){
-				if(obj==null) return "";
-				return obj.toString();	
-			}
-			throw new RuntimeException("TODO");
-		}
-	}
 #foreach($funcModel in ${mappingModel.funcs})
 #foreach($funcGroupModel in ${funcModel.items})
 #set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
@@ -37,16 +19,14 @@ class Datamodel2TableCopier{
 
 	/*
 	 * データ変換処理：
-	 * ${funcModel.name} : ${funcGroupModel.name}
+	 * ${funcModel.name}:${funcGroupModel.name}
 	 */
 	static public $StringUtil.toUpperCaseInitial($funcGroupModel.name) ${methodname}($param){
 		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=new $StringUtil.toUpperCaseInitial($funcGroupModel.name)();
 #foreach($item in ${funcGroupModel.items})
 		{
-			//FROM:テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数: $item.get("テーブル.少数")
-			//備考 : $StringUtil.cleanUpString($item.get("テーブル.備考"))
-			//TO:画面データモデル: $item.get("画面データモデル.モデルID/概要") 入力 : $item.get("画面データモデル.入力") key名 : $item.get("画面データモデル.key名") 型 : $item.get("画面データモデル.型")
-			//備考 :  $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
+			//FROM:テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数: $item.get("テーブル.少数") 備考:$StringUtil.cleanUpString($item.get("テーブル.備考"))
+			//TO:画面データモデル: $item.get("画面データモデル.モデルID/概要") 入力:$item.get("画面データモデル.入力") key名:$item.get("画面データモデル.key名") 型:$item.get("画面データモデル.型") 備考: $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
 #set ($physicalName =	$item.get("テーブル.項目名(物理)") )
 #set ( $keyName=$StringUtil.toCamelCase($item.get("テーブル.項目名(物理)")	)		)
 #set ( $kName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
@@ -58,9 +38,10 @@ class Datamodel2TableCopier{
 #set ($srcObjName = $StringUtil.toPascalCase($item.get("テーブル.テーブル(物理/論理)")))			
 #if($keyName==""	)
 			//TODO:
-			//result.$setDataMethod(($convertClass)ConverterUtility.convert(${convertClass}.class,$srcObjName.${getTableMethod}()));
+			//result.$setDataMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getTableMethod}()));
 #else
-			result.$setDataMethod(($convertClass)ConverterUtility.convert(${convertClass}.class,$srcObjName.${getTableMethod}()));
+			//TODO:
+			result.$setDataMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getTableMethod}()));
 #end
 		}
 #end

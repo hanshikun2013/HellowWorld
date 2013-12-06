@@ -21,7 +21,7 @@ class StringUtil  {
 			return "java.math.BigDecimal";
 		}
 		if("Date".equalsIgnoreCase(str) ){
-			return "java.sql.Date";
+			return "java.util.Date";
 		}
 		return "TODO";
 	}
@@ -131,10 +131,29 @@ class StringUtil  {
 		return result;
 		
 	}
+	public static String joinCallParams(List<String> list){
+		String result="";
+		if(list==null||list.size()==0){
+			return result;
+		}
+		boolean first=true;
+		for(String str:list){
+			if(first){
+				first=false;
+				result+=String.format("%s", StringUtil.toLowerCaseInitial(str))
+			}else{
+				result+=String.format(",  %s", StringUtil.toLowerCaseInitial(str))
+			}
+		}
+		return result;
+		
+	}
 	public static String cleanUpString(String str){
 		if(str==null) return "";
 		String result= str.replaceAll("\\s+","").replaceAll("\r\n|\n\r|\n|\r","")
 		return result
 	}
 
+
+	
 }

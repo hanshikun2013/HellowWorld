@@ -18,5 +18,5 @@ class TableModel {
 	public TableModelItem lookupByKey(String name){
 		return key2Item.get(name)
 	}
-	 
+	
 }

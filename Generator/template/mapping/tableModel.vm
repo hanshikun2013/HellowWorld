@@ -1,5 +1,4 @@
 package $tableModelPackage;
-//template:tableModel.vm
 public class 	$StringUtil.toCamelCase($tableModel.name)
 {
 #foreach($item in ${tableModel.items})

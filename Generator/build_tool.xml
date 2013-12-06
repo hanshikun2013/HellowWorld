@@ -79,7 +79,7 @@
 	
 	
 	 <target name="copy">
-	    <copy todir="C:/workspaceSSS/workspace/AxaNavi" >
+	    <copy todir="C:/GIT_TORTOISE/newnavi-back/AxaNavi" >
 	      <fileset dir="${dist.dir}">
 	      	<!-- 
 	        <exclude name="test/**/*"/>
@@ -95,18 +95,13 @@
 	  </target>
 	
 	 <target name="deletegen">
-	 	<!-- 
+	
 	 		 	<delete includeemptydirs="true">
-	 	    <fileset dir="C:/workspaceSSS/workspace/AxaNavi/src" defaultexcludes="false">
-	 	       <include name="**/gen/**" />
+	 	    <fileset dir="C:/GIT_TORTOISE/newnavi-back/AxaNavi/src" defaultexcludes="false">
+	 	       <include name="**/temp/**" />
 	 	    </fileset>
 	 	</delete>
-	 	
-	
-	 	<delete verbose="true" includeemptydirs="true">
-	 		<fileset dir="C:/Users/cap/git/newnavi-back/AxaNavi/src" includes="**/gen/*"/>
-		</delete>
-	 	-->
+
 	  </target>
 	
 	

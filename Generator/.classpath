@@ -66,7 +66,7 @@
 	<classpathentry kind="lib" path="lib/oro-2.0.8.jar"/>
 	<classpathentry kind="lib" path="lib/poi-3.10-beta2.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.10-beta2-sources.jar"/>
-	<classpathentry kind="lib" path="lib/poi-ooxml-3.10-beta2.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.10-beta2.jar" sourcepath="C:/Users/cap/.m2/repository/org/apache/poi/poi-ooxml/3.10-beta2/poi-ooxml-3.10-beta2-sources.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.10-beta2.jar"/>
 	<classpathentry kind="lib" path="lib/postgresql-9.1-901.jdbc4-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/postgresql-9.1-901.jdbc4-sources.jar"/>

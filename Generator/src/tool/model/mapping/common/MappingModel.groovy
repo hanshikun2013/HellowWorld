@@ -9,6 +9,7 @@ class MappingModel {
 	def List<TableModel> tableModels=new ArrayList<TableModel>()
 	def Map<String,DataModel> key2DataModel=new HashMap<String,DataModel>()
 	def Map<String,TableModel> key2TableModel=new HashMap<String,TableModel>()
+	def Map<String,TableModel> key2TableModelPascal=new HashMap<String,TableModel>()
 	def Map<String,FuncModel> key2FuncModel=new HashMap<String,FuncModel>()
 
 	def List<FuncModel> funcs=new ArrayList<FuncModel>()
@@ -25,6 +26,7 @@ class MappingModel {
 	public addTableModel(TableModel tableModel){
 		tableModels.add(tableModel)
 		key2TableModel.put(tableModel.getName(), tableModel)
+		key2TableModelPascal.put(StringUtil.toPascalCase(tableModel.getName()), tableModel)
 	}
 
 	public DataModel lookupDataModel(String name){
@@ -34,6 +36,12 @@ class MappingModel {
 		return key2TableModel.get(name)
 	}
 
+	public TableModel lookupTableModelPascal(String name){
+		return key2TableModelPascal.get(name)
+	}
+
+
+	
 	public FuncModel lookupFuncModel(String name){
 		return key2FuncModel.get(name)
 	}
@@ -63,7 +71,7 @@ class MappingModel {
 
 			for(FuncGroupModel group:funcModel.items){
 				for(Map item:group.items){
-					String tempName=item.get("画面データモデル.モデルID/概要")
+					String tempName=item.get("画面データモデル.モデルID/概要")+"Collection"
 					tempName=StringUtil.toUpperCaseInitial(tempName)
 					if(ComUtility.isIdentifier(tempName)){
 						if(!checkList.contains(tempName)){

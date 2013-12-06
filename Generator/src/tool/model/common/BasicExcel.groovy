@@ -20,7 +20,7 @@ class BasicExcel {
 		FileInputStream fi = new FileInputStream(path);
 		book = new XSSFWorkbook(fi);
 		evaluator = book.getCreationHelper().createFormulaEvaluator();
-		evaluator.evaluateAll();
+		//evaluator.evaluateAll();
 		fi.close();
 
 		for (Sheet sheet : book) {

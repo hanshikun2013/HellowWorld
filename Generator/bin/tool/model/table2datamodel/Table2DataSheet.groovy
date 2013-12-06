@@ -163,10 +163,10 @@ class Table2DataSheet extends BasicSheet{
 				//lookup DataModel
 				String colLogical=item.get("画面データモデル.モデルID/概要")
 
-				DataModel dataModel=mappingModel.lookupDataModel(colLogical)
+				DataModel dataModel=mappingModel.lookupDataModel(colLogical+"Collection")
 				if(dataModel==null){
 					dataModel=new DataModel();
-					dataModel.setName(colLogical)
+					dataModel.setName(colLogical+"Collection")
 					mappingModel.addDataModel(dataModel)
 				}
 				//lookup DataModel item
@@ -203,7 +203,7 @@ class Table2DataSheet extends BasicSheet{
 			}
 			
 			//lookup TableModel item
-			String modelId=item.get("画面データモデル.モデルID/概要")
+			String modelId=item.get("画面データモデル.モデルID/概要")+"Collection"
 			FuncGroupModel funcGroupModel=funcModel.lookupByName(modelId)
 			if(funcGroupModel==null){
 				funcGroupModel=new FuncGroupModel();

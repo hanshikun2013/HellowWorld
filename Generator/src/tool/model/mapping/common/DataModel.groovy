@@ -16,5 +16,5 @@ class DataModel {
 	public lookupByAttr(String name){
 		return key2Item.get(name)
 	}
-	
+
 }
