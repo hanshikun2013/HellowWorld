@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import jp.co.axa.life.app.lt.util.ConverterUtility;
 import temp.d2t.secondlife.datamodel.gen.LtPlanCollection;
+import temp.d2t.secondlife.datamodel.gen.Lrsc0301Collection;
 import temp.d2t.secondlife.datamodel.gen.Lrsc0304Collection;
 import temp.d2t.secondlife.datamodel.gen.Lrsc030501Collection;
 import temp.d2t.secondlife.datamodel.gen.Lrsc030201Collection;
@@ -20,7 +21,7 @@ import temp.d2t.secondlife.datamodel.gen.Lrsc030203Collection;
 import temp.d2t.secondlife.datamodel.gen.Lrsc030204Collection;
 import temp.d2t.secondlife.datamodel.gen.LtPensionCollection;
 import temp.d2t.secondlife.datamodel.gen.Lrsc030502Collection;
-import temp.d2t.secondlife.datamodel.gen.LRSC030503Collection;
+import temp.d2t.secondlife.datamodel.gen.Lrsc030503Collection;
 import temp.d2t.secondlife.entity.gen.TLrms2lfKihon;
 import temp.d2t.secondlife.entity.gen.TLrms2lfHysknLife;
 import temp.d2t.secondlife.entity.gen.TLrms2lfHysknJutaku;
@@ -55,14 +56,25 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
+		Lrsc0301Collection lrsc0301Collection =new Lrsc0301Collection ();
+		{
+			//TODO
+			lrsc0301Collection.setLivingCost(null);
+		}
 		Lrsc0304Collection lrsc0304Collection =new Lrsc0304Collection ();
 		{
+			//TODO
+			lrsc0304Collection.setIncomeHh(null);
+			//TODO
+			lrsc0304Collection.setIncomeSp(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneyHh(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneySp(null);
 			//TODO
 			lrsc0304Collection.setDeposit(null);
+			//TODO
+			lrsc0304Collection.setOtherIncome(null);
 		}
 		Lrsc030501Collection lrsc030501Collection =new Lrsc030501Collection ();
 		{
@@ -73,17 +85,25 @@ public class Datamodel2TableCopierTest{
 		}
 		
 		//call convert method
-		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0304Collection,  lrsc030501Collection);
+		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0301Collection,  lrsc0304Collection,  lrsc030501Collection);
 		//assertions
 		{
 			//TODO
 			assertEquals(null, result.getPlanId());
+			//TODO
+			assertEquals(null, result.getHysknLife());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuMain());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuSp());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinMain());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinSp());
 			//TODO
 			assertEquals(null, result.getJzsknYochokin());
+			//TODO
+			assertEquals(null, result.getJzsknOther());
 			//TODO
 			assertEquals(null, result.getNenkinInputCdMain());
 			//TODO
@@ -105,21 +125,30 @@ public class Datamodel2TableCopierTest{
 	public void testTransferTLrms2LfKihon_ParamsAllNull(){
 		//Initialize parameters
 		LtPlanCollection ltPlanCollection = null;
+		Lrsc0301Collection lrsc0301Collection = null;
 		Lrsc0304Collection lrsc0304Collection = null;
 		Lrsc030501Collection lrsc030501Collection = null;
 		
 		//call convert method
-		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0304Collection,  lrsc030501Collection);
+		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0301Collection,  lrsc0304Collection,  lrsc030501Collection);
 		//assertions
 		{
 			//TODO
 			assertEquals(null, result.getPlanId());
+			//TODO
+			assertEquals(null, result.getHysknLife());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuMain());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuSp());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinMain());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinSp());
 			//TODO
 			assertEquals(null, result.getJzsknYochokin());
+			//TODO
+			assertEquals(null, result.getJzsknOther());
 			//TODO
 			assertEquals(null, result.getNenkinInputCdMain());
 			//TODO
@@ -143,14 +172,25 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
+		Lrsc0301Collection lrsc0301Collection =new Lrsc0301Collection ();
+		{
+			//TODO
+			lrsc0301Collection.setLivingCost(null);
+		}
 		Lrsc0304Collection lrsc0304Collection =new Lrsc0304Collection ();
 		{
+			//TODO
+			lrsc0304Collection.setIncomeHh(null);
+			//TODO
+			lrsc0304Collection.setIncomeSp(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneyHh(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneySp(null);
 			//TODO
 			lrsc0304Collection.setDeposit(null);
+			//TODO
+			lrsc0304Collection.setOtherIncome(null);
 		}
 		Lrsc030501Collection lrsc030501Collection =new Lrsc030501Collection ();
 		{
@@ -161,17 +201,25 @@ public class Datamodel2TableCopierTest{
 		}
 		
 		//call convert method
-		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0304Collection,  lrsc030501Collection);
+		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0301Collection,  lrsc0304Collection,  lrsc030501Collection);
 		//assertions
 		{
 			//TODO
 			assertEquals(null, result.getPlanId());
+			//TODO
+			assertEquals(null, result.getHysknLife());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuMain());
+			//TODO
+			assertEquals(null, result.getJzsknShunyuSp());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinMain());
 			//TODO
 			assertEquals(null, result.getJzsknTaishokukinSp());
 			//TODO
 			assertEquals(null, result.getJzsknYochokin());
+			//TODO
+			assertEquals(null, result.getJzsknOther());
 			//TODO
 			assertEquals(null, result.getNenkinInputCdMain());
 			//TODO
@@ -195,14 +243,25 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
+		Lrsc0301Collection lrsc0301Collection =new Lrsc0301Collection ();
+		{
+			//TODO
+			lrsc0301Collection.setLivingCost(null);
+		}
 		Lrsc0304Collection lrsc0304Collection =new Lrsc0304Collection ();
 		{
+			//TODO
+			lrsc0304Collection.setIncomeHh(null);
+			//TODO
+			lrsc0304Collection.setIncomeSp(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneyHh(null);
 			//TODO
 			lrsc0304Collection.setRetirementMoneySp(null);
 			//TODO
 			lrsc0304Collection.setDeposit(null);
+			//TODO
+			lrsc0304Collection.setOtherIncome(null);
 		}
 		Lrsc030501Collection lrsc030501Collection =new Lrsc030501Collection ();
 		{
@@ -213,7 +272,7 @@ public class Datamodel2TableCopierTest{
 		}
 		
 		//call convert method
-		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0304Collection,  lrsc030501Collection);
+		TLrms2lfKihon result=Datamodel2TableCopier.transferTLrms2LfKihon(ltPlanCollection,  lrsc0301Collection,  lrsc0304Collection,  lrsc030501Collection);
 	}	
 
 	/*
@@ -231,12 +290,12 @@ public class Datamodel2TableCopierTest{
 		Lrsc030201Collection lrsc030201Collection =new Lrsc030201Collection ();
 		{
 			//TODO
-			lrsc030201Collection.set(null);
+			lrsc030201Collection.setTODO(null);
 		}
 		Collection collection =new Collection ();
 		{
 			//TODO
-			collection.set(null);
+			collection.setTODO(null);
 		}
 		
 		//call convert method
@@ -305,12 +364,12 @@ public class Datamodel2TableCopierTest{
 		Lrsc030201Collection lrsc030201Collection =new Lrsc030201Collection ();
 		{
 			//TODO
-			lrsc030201Collection.set(null);
+			lrsc030201Collection.setTODO(null);
 		}
 		Collection collection =new Collection ();
 		{
 			//TODO
-			collection.set(null);
+			collection.setTODO(null);
 		}
 		
 		//call convert method
@@ -347,12 +406,12 @@ public class Datamodel2TableCopierTest{
 		Lrsc030201Collection lrsc030201Collection =new Lrsc030201Collection ();
 		{
 			//TODO
-			lrsc030201Collection.set(null);
+			lrsc030201Collection.setTODO(null);
 		}
 		Collection collection =new Collection ();
 		{
 			//TODO
-			collection.set(null);
+			collection.setTODO(null);
 		}
 		
 		//call convert method
@@ -1413,22 +1472,22 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
-		LRSC030503Collection lRSC030503Collection =new LRSC030503Collection ();
+		Lrsc030503Collection lrsc030503Collection =new Lrsc030503Collection ();
 		{
 			//TODO
-			lRSC030503Collection.setId(null);
+			lrsc030503Collection.setId(null);
 			//TODO
-			lRSC030503Collection.setOtherContentName(null);
+			lrsc030503Collection.setOtherContentName(null);
 			//TODO
-			lRSC030503Collection.setOtherStartAge(null);
+			lrsc030503Collection.setOtherStartAge(null);
 			//TODO
-			lRSC030503Collection.setOtherEndAge(null);
+			lrsc030503Collection.setOtherEndAge(null);
 			//TODO
-			lRSC030503Collection.setOtherAmount(null);
+			lrsc030503Collection.setOtherAmount(null);
 		}
 		
 		//call convert method
-		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lRSC030503Collection);
+		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lrsc030503Collection);
 		//assertions
 		{
 			//TODO
@@ -1460,10 +1519,10 @@ public class Datamodel2TableCopierTest{
 	public void testTransferTLrms2LfJzsknOther_ParamsAllNull(){
 		//Initialize parameters
 		LtPlanCollection ltPlanCollection = null;
-		LRSC030503Collection lRSC030503Collection = null;
+		Lrsc030503Collection lrsc030503Collection = null;
 		
 		//call convert method
-		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lRSC030503Collection);
+		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lrsc030503Collection);
 		//assertions
 		{
 			//TODO
@@ -1497,22 +1556,22 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
-		LRSC030503Collection lRSC030503Collection =new LRSC030503Collection ();
+		Lrsc030503Collection lrsc030503Collection =new Lrsc030503Collection ();
 		{
 			//TODO
-			lRSC030503Collection.setId(null);
+			lrsc030503Collection.setId(null);
 			//TODO
-			lRSC030503Collection.setOtherContentName(null);
+			lrsc030503Collection.setOtherContentName(null);
 			//TODO
-			lRSC030503Collection.setOtherStartAge(null);
+			lrsc030503Collection.setOtherStartAge(null);
 			//TODO
-			lRSC030503Collection.setOtherEndAge(null);
+			lrsc030503Collection.setOtherEndAge(null);
 			//TODO
-			lRSC030503Collection.setOtherAmount(null);
+			lrsc030503Collection.setOtherAmount(null);
 		}
 		
 		//call convert method
-		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lRSC030503Collection);
+		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lrsc030503Collection);
 		//assertions
 		{
 			//TODO
@@ -1546,22 +1605,22 @@ public class Datamodel2TableCopierTest{
 			//TODO
 			ltPlanCollection.setPlanId(null);
 		}
-		LRSC030503Collection lRSC030503Collection =new LRSC030503Collection ();
+		Lrsc030503Collection lrsc030503Collection =new Lrsc030503Collection ();
 		{
 			//TODO
-			lRSC030503Collection.setId(null);
+			lrsc030503Collection.setId(null);
 			//TODO
-			lRSC030503Collection.setOtherContentName(null);
+			lrsc030503Collection.setOtherContentName(null);
 			//TODO
-			lRSC030503Collection.setOtherStartAge(null);
+			lrsc030503Collection.setOtherStartAge(null);
 			//TODO
-			lRSC030503Collection.setOtherEndAge(null);
+			lrsc030503Collection.setOtherEndAge(null);
 			//TODO
-			lRSC030503Collection.setOtherAmount(null);
+			lrsc030503Collection.setOtherAmount(null);
 		}
 		
 		//call convert method
-		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lRSC030503Collection);
+		TLrms2lfJzsknOther result=Datamodel2TableCopier.transferTLrms2LfJzsknOther(ltPlanCollection,  lrsc030503Collection);
 	}	
 
 }

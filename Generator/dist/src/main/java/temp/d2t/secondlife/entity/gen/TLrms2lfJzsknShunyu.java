@@ -35,12 +35,12 @@ public class 	TLrms2lfJzsknShunyu
     /**
      * SYSTEM_CREATE_DATE : システム作成日時
      */
-	private java.util.Date systemCreateDate;   
+	private String systemCreateDate;   
 
     /**
      * SYSTEM_UPDATE_DATE : システム更新日時
      */
-	private java.util.Date systemUpdateDate;   
+	private String systemUpdateDate;   
 
 	/**
 	 * プランIDを取得します。
@@ -142,7 +142,7 @@ public class 	TLrms2lfJzsknShunyu
 	 * システム作成日時を取得します。
 	 * @return システム作成日時
 	 */
-	public java.util.Date getSystemCreateDate() {
+	public String getSystemCreateDate() {
 		return systemCreateDate;
 	}
 	
@@ -150,7 +150,7 @@ public class 	TLrms2lfJzsknShunyu
 	 * システム作成日時を設定します。
 	 * @param systemCreateDate SYSTEM_CREATE_DATE
 	 */
-	public void setSystemCreateDate(java.util.Date systemCreateDate) {
+	public void setSystemCreateDate(String systemCreateDate) {
 		this.systemCreateDate = systemCreateDate;
 	}
 
@@ -158,7 +158,7 @@ public class 	TLrms2lfJzsknShunyu
 	 * システム更新日時を取得します。
 	 * @return システム更新日時
 	 */
-	public java.util.Date getSystemUpdateDate() {
+	public String getSystemUpdateDate() {
 		return systemUpdateDate;
 	}
 	
@@ -166,7 +166,7 @@ public class 	TLrms2lfJzsknShunyu
 	 * システム更新日時を設定します。
 	 * @param systemUpdateDate SYSTEM_UPDATE_DATE
 	 */
-	public void setSystemUpdateDate(java.util.Date systemUpdateDate) {
+	public void setSystemUpdateDate(String systemUpdateDate) {
 		this.systemUpdateDate = systemUpdateDate;
 	}
 }

@@ -13,17 +13,17 @@ public class 	Lrsc030202Collection
      * 現在家賃
      */
  	@JsonProperty("currentRent")
-	private String currentRent;   
+	private java.math.BigDecimal currentRent;   
     /**
      * 返済額
      */
  	@JsonProperty("amountRepaid")
-	private String amountRepaid;   
+	private java.math.BigDecimal amountRepaid;   
     /**
      * 残返済期間
      */
  	@JsonProperty("remainingDuration")
-	private String remainingDuration;   
+	private java.math.BigDecimal remainingDuration;   
 
 	/**
 	 * 住宅区分を取得します。
@@ -45,7 +45,7 @@ public class 	Lrsc030202Collection
 	 * 現在家賃を取得します。
 	 * @return 現在家賃
 	 */
-	public String getCurrentRent() {
+	public java.math.BigDecimal getCurrentRent() {
 		return currentRent;
 	}
 	
@@ -53,7 +53,7 @@ public class 	Lrsc030202Collection
 	 * 現在家賃を設定します。
 	 * @param currentRent 現在家賃
 	 */
-	public void setCurrentRent(String currentRent) {
+	public void setCurrentRent(java.math.BigDecimal currentRent) {
 		this.currentRent = currentRent;
 	}
 
@@ -61,7 +61,7 @@ public class 	Lrsc030202Collection
 	 * 返済額を取得します。
 	 * @return 返済額
 	 */
-	public String getAmountRepaid() {
+	public java.math.BigDecimal getAmountRepaid() {
 		return amountRepaid;
 	}
 	
@@ -69,7 +69,7 @@ public class 	Lrsc030202Collection
 	 * 返済額を設定します。
 	 * @param amountRepaid 返済額
 	 */
-	public void setAmountRepaid(String amountRepaid) {
+	public void setAmountRepaid(java.math.BigDecimal amountRepaid) {
 		this.amountRepaid = amountRepaid;
 	}
 
@@ -77,7 +77,7 @@ public class 	Lrsc030202Collection
 	 * 残返済期間を取得します。
 	 * @return 残返済期間
 	 */
-	public String getRemainingDuration() {
+	public java.math.BigDecimal getRemainingDuration() {
 		return remainingDuration;
 	}
 	
@@ -85,7 +85,7 @@ public class 	Lrsc030202Collection
 	 * 残返済期間を設定します。
 	 * @param remainingDuration 残返済期間
 	 */
-	public void setRemainingDuration(String remainingDuration) {
+	public void setRemainingDuration(java.math.BigDecimal remainingDuration) {
 		this.remainingDuration = remainingDuration;
 	}
 }	

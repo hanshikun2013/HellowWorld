@@ -34,21 +34,25 @@ import tool.model.table2datamodel.Table2DataExcel
 
 
 
-LRMS_相続:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_相続_データモデル←テーブルマッピング.xlsx"
-	
-	gen( path, "souzoku" )
-}
-LRMS_共通:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_共通_データモデル←テーブルマッピング.xlsx"
-	gen( path, "kyotsu"   )
-}
-LRMS_介護:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_介護_データモデル←テーブルマッピング.xlsx"
-	gen( path, "kaigo"  )
+//LRMS_相続:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_相続_データモデル←テーブルマッピング.xlsx"
+//	
+//	gen( path, "souzoku" )
+//}
+//LRMS_共通:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_共通_データモデル←テーブルマッピング.xlsx"
+//	gen( path, "kyotsu"   )
+//}
+//LRMS_介護:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_介護_データモデル←テーブルマッピング.xlsx"
+//	gen( path, "kaigo"  )
+//}
+
+LRMS_セカンドライフ:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_セカンドライフ_データモデル←テーブルマッピング.xlsx"
+	gen( path, "secondlife"  )
 }
 
- 
 
 
 public static  gen(String path,String base ) {

@@ -26,6 +26,7 @@ public  class $table2DatamodelCopierName{
 	static public $StringUtil.toUpperCaseInitial($funcGroupModel.name) ${methodname}($param){
 		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=new $StringUtil.toUpperCaseInitial($funcGroupModel.name)();
 #foreach($item in ${funcGroupModel.items})
+
 		//FROM:テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数: $item.get("テーブル.少数") 備考:$StringUtil.cleanUpString($item.get("テーブル.備考"))
 		//TO:画面データモデル: $item.get("画面データモデル.モデルID/概要") 入力:$item.get("画面データモデル.入力") key名:$item.get("画面データモデル.key名") 型:$item.get("画面データモデル.型") 備考: $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
 #set ($physicalName =	$item.get("テーブル.項目名(物理)") )
@@ -33,8 +34,8 @@ public  class $table2DatamodelCopierName{
 #set ( $kName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
 #set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toUpperCaseInitial($kName)) )
 #set ($setDataMethod = "set$method")
-#set ( $attr = "String" )
-#set ( $convertClass = "String" )
+#set ( $attr = $item.get("画面データモデル.型") )
+#set ( $convertClass = $StringUtil.getTypeName($attr) )
 #set ($getTableMethod = "get$keyName")
 #set ($srcObjName = $StringUtil.toPascalCase($item.get("テーブル.テーブル(物理/論理)")))			
 #if($keyName==""	)

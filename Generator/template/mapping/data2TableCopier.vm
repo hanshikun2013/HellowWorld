@@ -32,6 +32,7 @@ public class $datamodel2TableCopierName{
 
 		$StringUtil.toCamelCase($funcGroupModel.name) result=new $StringUtil.toCamelCase($funcGroupModel.name)();
 #foreach($item in ${funcGroupModel.items})
+
 		//FROM:画面データモデル:$item.get("画面データモデル.モデルID/概要") 入力:$item.get("画面データモデル.入力") key名:$item.get("画面データモデル.key名") 型:$item.get("画面データモデル.型") 備考: $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
 		//TO:テーブル.テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数:$item.get("テーブル.少数") 備考:$StringUtil.cleanUpString($item.get("テーブル.備考"))
 #set ($physicalName =	$item.get("テーブル.項目名(物理)") )

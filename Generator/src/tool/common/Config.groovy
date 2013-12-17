@@ -28,5 +28,19 @@ class Config  {
 		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_OTHER", "transferTLrms2LfJzsknOther")
 		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_SHUNYU", "transferTLrms2LfJzsknShunyu")
 		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_KIHON", "transferTLrms2LfKihon")
+		
+		
+		Config.namingMap.put("_Lrsc0301Collection", "transferLrsc0301Collection")
+		Config.namingMap.put("_Lrsc030201Collection", "transferLrsc030201Collection")
+		Config.namingMap.put("_Lrsc030202Collection", "transferLrsc030202Collection")
+		Config.namingMap.put("_Lrsc030203Collection", "transferLrsc030203Collection")
+		Config.namingMap.put("_Lrsc030204Collection", "transferLrsc030204Collection")
+		Config.namingMap.put("_Lrsc0304Collection", "transferLrsc0304Collection")
+		Config.namingMap.put("_Lrsc030501Collection", "transferLrsc030501Collection")
+		Config.namingMap.put("_Lrsc030502Collection", "transferLrsc030502Collection")
+		Config.namingMap.put("_Lrsc030503Collection", "transferLrsc030503Collection")
+		Config.namingMap.put("_Lrsc030701Collection", "transferLrsc030701Collection")
+		
+		
 	}
 }

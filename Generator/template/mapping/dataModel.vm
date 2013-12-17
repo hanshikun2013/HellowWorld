@@ -5,19 +5,23 @@ import org.codehaus.jackson.annotate.JsonProperty;
 public class 	$StringUtil.toUpperCaseInitial($dataModel.name)
 {
 #foreach($item in ${dataModel.items})
+#set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.dataType)) )
+#set ( $type = $StringUtil.getTypeName($attr) )
     /**
      * $item.input
      */
  	@JsonProperty("$item.key")
-	private ${item.classType} $StringUtil.toLowerCaseInitial( $item.key);   
+	private $type $StringUtil.toLowerCaseInitial( $item.key);   
 #end
 #foreach($item in ${dataModel.items})
+#set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.dataType)) )
+#set ( $type = $StringUtil.getTypeName($attr) )
 
 	/**
 	 * $item.inputを取得します。
 	 * @return $item.input
 	 */
-	public ${item.classType} get$StringUtil.toUpperCaseInitial( $item.key)() {
+	public $type get$StringUtil.toUpperCaseInitial( $item.key)() {
 		return $StringUtil.toLowerCaseInitial( $item.key);
 	}
 	
@@ -25,7 +29,7 @@ public class 	$StringUtil.toUpperCaseInitial($dataModel.name)
 	 * $item.inputを設定します。
 	 * @param $item.key $item.input
 	 */
-	public void set$StringUtil.toUpperCaseInitial( $item.key)(${item.classType} $StringUtil.toLowerCaseInitial( $item.key)) {
+	public void set$StringUtil.toUpperCaseInitial( $item.key)($type $StringUtil.toLowerCaseInitial( $item.key)) {
 		this.$StringUtil.toLowerCaseInitial( $item.key) = $StringUtil.toLowerCaseInitial( $item.key);
 	}
 #end

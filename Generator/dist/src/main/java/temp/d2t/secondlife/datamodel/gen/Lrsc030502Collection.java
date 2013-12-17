@@ -13,22 +13,22 @@ public class 	Lrsc030502Collection
      * id
      */
  	@JsonProperty("id")
-	private String id;   
+	private java.math.BigDecimal id;   
     /**
      * 収入From年齢入力欄
      */
  	@JsonProperty("incomeStartAge")
-	private String incomeStartAge;   
+	private java.math.BigDecimal incomeStartAge;   
     /**
      * 収入To年齢入力欄
      */
  	@JsonProperty("incomeEndAge")
-	private String incomeEndAge;   
+	private java.math.BigDecimal incomeEndAge;   
     /**
      * 収入金額入力欄
      */
  	@JsonProperty("incomeAmount")
-	private String incomeAmount;   
+	private java.math.BigDecimal incomeAmount;   
 
 	/**
 	 * 世帯主配偶者識別フラグを取得します。
@@ -50,7 +50,7 @@ public class 	Lrsc030502Collection
 	 * idを取得します。
 	 * @return id
 	 */
-	public String getId() {
+	public java.math.BigDecimal getId() {
 		return id;
 	}
 	
@@ -58,7 +58,7 @@ public class 	Lrsc030502Collection
 	 * idを設定します。
 	 * @param id id
 	 */
-	public void setId(String id) {
+	public void setId(java.math.BigDecimal id) {
 		this.id = id;
 	}
 
@@ -66,7 +66,7 @@ public class 	Lrsc030502Collection
 	 * 収入From年齢入力欄を取得します。
 	 * @return 収入From年齢入力欄
 	 */
-	public String getIncomeStartAge() {
+	public java.math.BigDecimal getIncomeStartAge() {
 		return incomeStartAge;
 	}
 	
@@ -74,7 +74,7 @@ public class 	Lrsc030502Collection
 	 * 収入From年齢入力欄を設定します。
 	 * @param incomeStartAge 収入From年齢入力欄
 	 */
-	public void setIncomeStartAge(String incomeStartAge) {
+	public void setIncomeStartAge(java.math.BigDecimal incomeStartAge) {
 		this.incomeStartAge = incomeStartAge;
 	}
 
@@ -82,7 +82,7 @@ public class 	Lrsc030502Collection
 	 * 収入To年齢入力欄を取得します。
 	 * @return 収入To年齢入力欄
 	 */
-	public String getIncomeEndAge() {
+	public java.math.BigDecimal getIncomeEndAge() {
 		return incomeEndAge;
 	}
 	
@@ -90,7 +90,7 @@ public class 	Lrsc030502Collection
 	 * 収入To年齢入力欄を設定します。
 	 * @param incomeEndAge 収入To年齢入力欄
 	 */
-	public void setIncomeEndAge(String incomeEndAge) {
+	public void setIncomeEndAge(java.math.BigDecimal incomeEndAge) {
 		this.incomeEndAge = incomeEndAge;
 	}
 
@@ -98,7 +98,7 @@ public class 	Lrsc030502Collection
 	 * 収入金額入力欄を取得します。
 	 * @return 収入金額入力欄
 	 */
-	public String getIncomeAmount() {
+	public java.math.BigDecimal getIncomeAmount() {
 		return incomeAmount;
 	}
 	
@@ -106,7 +106,7 @@ public class 	Lrsc030502Collection
 	 * 収入金額入力欄を設定します。
 	 * @param incomeAmount 収入金額入力欄
 	 */
-	public void setIncomeAmount(String incomeAmount) {
+	public void setIncomeAmount(java.math.BigDecimal incomeAmount) {
 		this.incomeAmount = incomeAmount;
 	}
 }	

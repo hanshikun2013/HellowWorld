@@ -5,25 +5,25 @@ import org.codehaus.jackson.annotate.JsonProperty;
 public class 	Lrsc030201Collection
 {
     /**
-     * 
+     * TODO
      */
- 	@JsonProperty("")
-	private String ;   
+ 	@JsonProperty("TODO")
+	private String tODO;   
 
 	/**
-	 * を取得します。
-	 * @return 
+	 * TODOを取得します。
+	 * @return TODO
 	 */
-	public String get() {
-		return ;
+	public String getTODO() {
+		return tODO;
 	}
 	
 	/**
-	 * を設定します。
-	 * @param  
+	 * TODOを設定します。
+	 * @param TODO TODO
 	 */
-	public void set(String ) {
-		this. = ;
+	public void setTODO(String tODO) {
+		this.tODO = tODO;
 	}
 }	
 

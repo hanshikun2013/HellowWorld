@@ -8,6 +8,21 @@ public class 	TLrms2lfKihon
 	private String planId;   
 
     /**
+     * HYSKN_LIFE : 必要資金 生活費
+     */
+	private java.math.BigDecimal hysknLife;   
+
+    /**
+     * JZSKN_SHUNYU_MAIN : 準備済資金 収入（主）
+     */
+	private java.math.BigDecimal jzsknShunyuMain;   
+
+    /**
+     * JZSKN_SHUNYU_SP : 準備済資金 収入（配）
+     */
+	private java.math.BigDecimal jzsknShunyuSp;   
+
+    /**
      * JZSKN_TAISHOKUKIN_MAIN : 準備済資金 退職金（主）
      */
 	private java.math.BigDecimal jzsknTaishokukinMain;   
@@ -23,6 +38,11 @@ public class 	TLrms2lfKihon
 	private java.math.BigDecimal jzsknYochokin;   
 
     /**
+     * JZSKN_OTHER : 準備済資金 その他
+     */
+	private java.math.BigDecimal jzsknOther;   
+
+    /**
      * NENKIN_INPUT_CD_MAIN : 年金情報入力種別コード（主）
      */
 	private String nenkinInputCdMain;   
@@ -35,12 +55,12 @@ public class 	TLrms2lfKihon
     /**
      * SYSTEM_CREATE_DATE : システム作成日時
      */
-	private java.util.Date systemCreateDate;   
+	private String systemCreateDate;   
 
     /**
      * SYSTEM_UPDATE_DATE : システム更新日時
      */
-	private java.util.Date systemUpdateDate;   
+	private String systemUpdateDate;   
 
 	/**
 	 * プランIDを取得します。
@@ -56,6 +76,54 @@ public class 	TLrms2lfKihon
 	 */
 	public void setPlanId(String planId) {
 		this.planId = planId;
+	}
+
+	/**
+	 * 必要資金 生活費を取得します。
+	 * @return 必要資金 生活費
+	 */
+	public java.math.BigDecimal getHysknLife() {
+		return hysknLife;
+	}
+	
+	/**
+	 * 必要資金 生活費を設定します。
+	 * @param hysknLife HYSKN_LIFE
+	 */
+	public void setHysknLife(java.math.BigDecimal hysknLife) {
+		this.hysknLife = hysknLife;
+	}
+
+	/**
+	 * 準備済資金 収入（主）を取得します。
+	 * @return 準備済資金 収入（主）
+	 */
+	public java.math.BigDecimal getJzsknShunyuMain() {
+		return jzsknShunyuMain;
+	}
+	
+	/**
+	 * 準備済資金 収入（主）を設定します。
+	 * @param jzsknShunyuMain JZSKN_SHUNYU_MAIN
+	 */
+	public void setJzsknShunyuMain(java.math.BigDecimal jzsknShunyuMain) {
+		this.jzsknShunyuMain = jzsknShunyuMain;
+	}
+
+	/**
+	 * 準備済資金 収入（配）を取得します。
+	 * @return 準備済資金 収入（配）
+	 */
+	public java.math.BigDecimal getJzsknShunyuSp() {
+		return jzsknShunyuSp;
+	}
+	
+	/**
+	 * 準備済資金 収入（配）を設定します。
+	 * @param jzsknShunyuSp JZSKN_SHUNYU_SP
+	 */
+	public void setJzsknShunyuSp(java.math.BigDecimal jzsknShunyuSp) {
+		this.jzsknShunyuSp = jzsknShunyuSp;
 	}
 
 	/**
@@ -107,6 +175,22 @@ public class 	TLrms2lfKihon
 	}
 
 	/**
+	 * 準備済資金 その他を取得します。
+	 * @return 準備済資金 その他
+	 */
+	public java.math.BigDecimal getJzsknOther() {
+		return jzsknOther;
+	}
+	
+	/**
+	 * 準備済資金 その他を設定します。
+	 * @param jzsknOther JZSKN_OTHER
+	 */
+	public void setJzsknOther(java.math.BigDecimal jzsknOther) {
+		this.jzsknOther = jzsknOther;
+	}
+
+	/**
 	 * 年金情報入力種別コード（主）を取得します。
 	 * @return 年金情報入力種別コード（主）
 	 */
@@ -142,7 +226,7 @@ public class 	TLrms2lfKihon
 	 * システム作成日時を取得します。
 	 * @return システム作成日時
 	 */
-	public java.util.Date getSystemCreateDate() {
+	public String getSystemCreateDate() {
 		return systemCreateDate;
 	}
 	
@@ -150,7 +234,7 @@ public class 	TLrms2lfKihon
 	 * システム作成日時を設定します。
 	 * @param systemCreateDate SYSTEM_CREATE_DATE
 	 */
-	public void setSystemCreateDate(java.util.Date systemCreateDate) {
+	public void setSystemCreateDate(String systemCreateDate) {
 		this.systemCreateDate = systemCreateDate;
 	}
 
@@ -158,7 +242,7 @@ public class 	TLrms2lfKihon
 	 * システム更新日時を取得します。
 	 * @return システム更新日時
 	 */
-	public java.util.Date getSystemUpdateDate() {
+	public String getSystemUpdateDate() {
 		return systemUpdateDate;
 	}
 	
@@ -166,7 +250,7 @@ public class 	TLrms2lfKihon
 	 * システム更新日時を設定します。
 	 * @param systemUpdateDate SYSTEM_UPDATE_DATE
 	 */
-	public void setSystemUpdateDate(java.util.Date systemUpdateDate) {
+	public void setSystemUpdateDate(String systemUpdateDate) {
 		this.systemUpdateDate = systemUpdateDate;
 	}
 }

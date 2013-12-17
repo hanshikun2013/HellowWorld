@@ -8,7 +8,7 @@ public class 	Lrsc030203Collection
      * id
      */
  	@JsonProperty("id")
-	private String id;   
+	private java.math.BigDecimal id;   
     /**
      * 趣味イベント名
      */
@@ -18,28 +18,28 @@ public class 	Lrsc030203Collection
      * 趣味イベント利用開始年齢
      */
  	@JsonProperty("hobbyStartAge")
-	private String hobbyStartAge;   
+	private java.math.BigDecimal hobbyStartAge;   
     /**
      * 趣味イベント利用終了年齢
      */
  	@JsonProperty("hobbyEndAge")
-	private String hobbyEndAge;   
+	private java.math.BigDecimal hobbyEndAge;   
     /**
      * 趣味イベント利用頻度
      */
  	@JsonProperty("hobbyInterval")
-	private String hobbyInterval;   
+	private java.math.BigDecimal hobbyInterval;   
     /**
      * 趣味イベント費用
      */
  	@JsonProperty("hobbyCost")
-	private String hobbyCost;   
+	private java.math.BigDecimal hobbyCost;   
 
 	/**
 	 * idを取得します。
 	 * @return id
 	 */
-	public String getId() {
+	public java.math.BigDecimal getId() {
 		return id;
 	}
 	
@@ -47,7 +47,7 @@ public class 	Lrsc030203Collection
 	 * idを設定します。
 	 * @param id id
 	 */
-	public void setId(String id) {
+	public void setId(java.math.BigDecimal id) {
 		this.id = id;
 	}
 
@@ -71,7 +71,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用開始年齢を取得します。
 	 * @return 趣味イベント利用開始年齢
 	 */
-	public String getHobbyStartAge() {
+	public java.math.BigDecimal getHobbyStartAge() {
 		return hobbyStartAge;
 	}
 	
@@ -79,7 +79,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用開始年齢を設定します。
 	 * @param hobbyStartAge 趣味イベント利用開始年齢
 	 */
-	public void setHobbyStartAge(String hobbyStartAge) {
+	public void setHobbyStartAge(java.math.BigDecimal hobbyStartAge) {
 		this.hobbyStartAge = hobbyStartAge;
 	}
 
@@ -87,7 +87,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用終了年齢を取得します。
 	 * @return 趣味イベント利用終了年齢
 	 */
-	public String getHobbyEndAge() {
+	public java.math.BigDecimal getHobbyEndAge() {
 		return hobbyEndAge;
 	}
 	
@@ -95,7 +95,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用終了年齢を設定します。
 	 * @param hobbyEndAge 趣味イベント利用終了年齢
 	 */
-	public void setHobbyEndAge(String hobbyEndAge) {
+	public void setHobbyEndAge(java.math.BigDecimal hobbyEndAge) {
 		this.hobbyEndAge = hobbyEndAge;
 	}
 
@@ -103,7 +103,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用頻度を取得します。
 	 * @return 趣味イベント利用頻度
 	 */
-	public String getHobbyInterval() {
+	public java.math.BigDecimal getHobbyInterval() {
 		return hobbyInterval;
 	}
 	
@@ -111,7 +111,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント利用頻度を設定します。
 	 * @param hobbyInterval 趣味イベント利用頻度
 	 */
-	public void setHobbyInterval(String hobbyInterval) {
+	public void setHobbyInterval(java.math.BigDecimal hobbyInterval) {
 		this.hobbyInterval = hobbyInterval;
 	}
 
@@ -119,7 +119,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント費用を取得します。
 	 * @return 趣味イベント費用
 	 */
-	public String getHobbyCost() {
+	public java.math.BigDecimal getHobbyCost() {
 		return hobbyCost;
 	}
 	
@@ -127,7 +127,7 @@ public class 	Lrsc030203Collection
 	 * 趣味イベント費用を設定します。
 	 * @param hobbyCost 趣味イベント費用
 	 */
-	public void setHobbyCost(String hobbyCost) {
+	public void setHobbyCost(java.math.BigDecimal hobbyCost) {
 		this.hobbyCost = hobbyCost;
 	}
 }	

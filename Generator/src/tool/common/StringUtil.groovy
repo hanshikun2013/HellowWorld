@@ -60,25 +60,64 @@ class StringUtil  {
 	}
 	
 	public static String getMappingName(String str) {
-		String result=Config.namingMap.get(str)
+		String result=Config.namingMap.get(str.trim())
 		if(result==null) return str;
 		return result;
 	}
 	public static String getTypeName(String str) {
+		
+		if(str==null) return "String";
+		String basicType="String";
+		
 		if("VARCHAR".equalsIgnoreCase(str)
 		||"VARCHAR2".equalsIgnoreCase(str)
 		||"Char".equalsIgnoreCase(str)
-
+		||"STRING".equalsIgnoreCase(str)
+		||"Code".equalsIgnoreCase(str)
+		||"DATE".equalsIgnoreCase(str)
+		
 		){
-			return "String";
+			basicType= "String";
 		}
 		if("Number".equalsIgnoreCase(str) ){
-			return "java.math.BigDecimal";
+			basicType= "java.math.BigDecimal";
+		}
+		if("INTEGER".equalsIgnoreCase(str) ){
+			basicType= "Integer";
+		}
+		if("BOOLEAN".equalsIgnoreCase(str) ){
+			basicType= "Boolean";
 		}
 		if("Date".equalsIgnoreCase(str) ){
-			return "java.util.Date";
+			basicType= "String";
 		}
-		return "TODO";
+		
+		if("VARCHAR[]".equalsIgnoreCase(str)
+			||"VARCHAR2[]".equalsIgnoreCase(str)
+			||"Char[]".equalsIgnoreCase(str)
+			||"STRING[]".equalsIgnoreCase(str)
+			||"Code[]".equalsIgnoreCase(str)
+			||"DATE[]".equalsIgnoreCase(str)
+			
+			){
+				basicType= "String[]";
+			}
+			if("Number[]".equalsIgnoreCase(str) ){
+				basicType= "java.math.BigDecimal[]";
+			}
+			if("INTEGER[]".equalsIgnoreCase(str) ){
+				basicType= "Integer[]";
+			}
+			if("BOOLEAN[]".equalsIgnoreCase(str) ){
+				basicType= "Boolean[]";
+			}
+			if("Date[]".equalsIgnoreCase(str) ){
+				basicType= "String[]";
+			}
+			
+		
+			return basicType;
+		
 	}
 
 	public static boolean isEmpty(String str) {
