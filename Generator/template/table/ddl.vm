@@ -1,0 +1,31 @@
+
+#foreach($tableSheet in ${excel.tableSheets})
+#if( "CMSTT0001" == $tableSheet.tableName
+	||"CMSTT0010" == $tableSheet.tableName
+	||"CMSTT0600" == $tableSheet.tableName
+	||"CMSTT0601" == $tableSheet.tableName
+	||"CMSTT0602" == $tableSheet.tableName
+	||"CMSTT0603" == $tableSheet.tableName
+	||"CMSTT0605" == $tableSheet.tableName
+	||"CMSTT0606" == $tableSheet.tableName
+	||"CMSTT0607" == $tableSheet.tableName
+	||"CMSTT0608" == $tableSheet.tableName
+	||"CMSTT0610" == $tableSheet.tableName
+	||"CMSTT0622" == $tableSheet.tableName
+	||"CMSTT0630" == $tableSheet.tableName
+)
+drop table $tableSheet.tableName cascade constraints;
+
+create table $tableSheet.tableName (
+#foreach ($item in	$tableSheet.items )
+#set($text = $StringUtil.getCreateColText($item))
+#if( "" != $text)
+	$text
+#end
+#end
+	$StringUtil.getPkText($tableSheet)
+);
+#end
+
+#end
+

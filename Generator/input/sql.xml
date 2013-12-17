@@ -4,21 +4,21 @@
 		userId="USER01" password="USER01PW">
 	</jdbcConnection>
 	<package  
-	dao="jp.co.axa.life.app.lt.dao.gen" 
-	controller="jp.co.axa.life.app.lt.controller.gen"
-	service="jp.co.axa.life.app.lt.service.gen"
-	service_interface="jp.co.axa.life.app.lt.service.gen"
-	dao_test="jp.co.axa.life.app.lt.dao.test.gen"
-	json_model="jp.co.axa.life.app.lt.model.gen"
-	service_test="jp.co.axa.life.app.lt.service.test.gen"
-	controller_test="jp.co.axa.life.app.lt.controller.test.gen"
-	dao_test_resource="jp.co.axa.life.app.lt.dao.resource.gen"
-	service_test_resource="jp.co.axa.life.app.lt.service.resource.gen"
-	controller_test_resource="jp.co.axa.life.app.lt.controller.resource.gen"
-	mapper="jp.co.axa.life.app.lt.mapper.gen" 
-	xml="jp.co.axa.life.app.lt.sql.gen" 
-	parameter="jp.co.axa.life.app.lt.parameter.gen"
-	result="jp.co.axa.life.app.lt.result.gen" />
+	dao="jptest.co.axa.life.app.lt.dao.gen" 
+	controller="jptest.co.axa.life.app.lt.controller.gen"
+	service="jptest.co.axa.life.app.lt.service.gen"
+	service_interface="jptest.co.axa.life.app.lt.service.gen"
+	dao_test="jptest.co.axa.life.app.lt.dao.test.gen"
+	json_model="jptest.co.axa.life.app.lt.model.gen"
+	service_test="jptest.co.axa.life.app.lt.service.test.gen"
+	controller_test="jptest.co.axa.life.app.lt.controller.test.gen"
+	dao_test_resource="jptest.co.axa.life.app.lt.dao.resource.gen"
+	service_test_resource="jptest.co.axa.life.app.lt.service.resource.gen"
+	controller_test_resource="jptest.co.axa.life.app.lt.controller.resource.gen"
+	mapper="jptest.co.axa.life.app.lt.mapper.gen" 
+	xml="jptest.co.axa.life.app.lt.sql.gen" 
+	parameter="jptest.co.axa.life.app.lt.parameter.gen"
+	result="jptest.co.axa.life.app.lt.result.gen" />
 	<sqls>
 		<sql id="Kihon">
 			<params>

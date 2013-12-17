@@ -79,7 +79,38 @@ public class ${datamodel2TableCopierName}Test{
 	 * Test ${funcModel.name}:${funcGroupModel.name}
 	 */
 	@Test
-	public void test$StringUtil.toUpperCaseInitial(${methodname})_AllNull(){
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_ParamsAllNull(){
+		//Initialize parameters
+#foreach($dataModelName in ${funcGroupModel.dataModelList})
+		$StringUtil.toUpperCaseInitial($dataModelName) $StringUtil.toLowerCaseInitial($dataModelName) = null;
+#end	
+		
+		//call convert method
+		$StringUtil.toCamelCase($funcGroupModel.name) result=${datamodel2TableCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
+		//assertions
+		{
+#foreach($item in ${funcGroupModel.items})
+#set ($physicalName =	$item.get("テーブル.項目名(物理)") )
+#set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toCamelCase($physicalName)) )
+#set ($getTableMethod = "get$method")
+#set ( $attr = $item.get("テーブル.属性") )
+#set ( $convertClass = $StringUtil.getTypeName($attr) )
+#set ( $keyName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
+#set ($getDataMethod = "get$keyName")
+#set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
+#set ($srcObjName = "${srcObjName}Collection")	
+			//TODO
+			assertEquals(null, result.$getTableMethod());
+#end
+		}
+	}
+	
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_FieldsAllNull(){
 		//Initialize parameters
 #foreach($dataModelName in ${funcGroupModel.dataModelList})
 		$StringUtil.toUpperCaseInitial($dataModelName) $StringUtil.toLowerCaseInitial($dataModelName) =new $StringUtil.toUpperCaseInitial($dataModelName) ();
@@ -110,8 +141,7 @@ public class ${datamodel2TableCopierName}Test{
 			assertEquals(null, result.$getTableMethod());
 #end
 		}
-	}
-	
+	}	
 	
 	/*
 	 * データ変換処理：

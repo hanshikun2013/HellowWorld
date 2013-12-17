@@ -9,7 +9,7 @@ import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
 #end
 
 
-class $datamodel2TableCopierName{
+public class $datamodel2TableCopierName{
 
 #foreach($funcModel in ${mappingModel.funcs})
 #foreach($funcGroupModel in ${funcModel.items})
@@ -22,6 +22,12 @@ class $datamodel2TableCopierName{
 	 * ${funcModel.name}:${funcGroupModel.name}
 	 */
 	static public $StringUtil.toCamelCase($funcGroupModel.name) ${methodname}($param){
+		//パラメターのNULLチェック：	
+#foreach($dataModelName in ${funcGroupModel.dataModelList})
+		if( $StringUtil.toLowerCaseInitial($dataModelName) == null)
+			$StringUtil.toLowerCaseInitial($dataModelName) =new $StringUtil.toUpperCaseInitial($dataModelName) ();
+#end	
+
 		$StringUtil.toCamelCase($funcGroupModel.name) result=new $StringUtil.toCamelCase($funcGroupModel.name)();
 #foreach($item in ${funcGroupModel.items})
 		{

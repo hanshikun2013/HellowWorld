@@ -8,7 +8,7 @@ import tool.common.ExcelUtility
 class BasicSheet {
 	int startX,startY
 	String[] TITLE_NAME={}
-	List<HashMap> items=new ArrayList<HashMap>();
+	def List<HashMap> items=new ArrayList<HashMap>();
 	BasicExcel excel
 	public BasicSheet(BasicExcel excel){
 		init();

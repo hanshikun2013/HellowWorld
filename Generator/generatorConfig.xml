@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+      <classPathEntry location="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar" 
+                />  
+
+        <context id="DB2Tables" targetRuntime="MyBatis3">
+        
+                <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@localhost:1521:XE" userId="USER01"
+                        password="USER01PW">
+                </jdbcConnection>
+
+                <javaTypeResolver>
+                        <property name="forceBigDecimals" value="true" />
+                </javaTypeResolver>
+
+                <javaModelGenerator targetPackage="jp.co.axa.life.app.lt.model.autogen"
+                        targetProject="AxaNavi/src/main/java">
+                        <property name="enableSubPackages" value="true" />
+                        <property name="trimStrings" value="true" />
+                </javaModelGenerator>
+
+                <sqlMapGenerator targetPackage="jp.co.axa.life.app.lt.sql.autogen"
+                        targetProject="AxaNavi/src/main/java">
+                        <property name="enableSubPackages" value="true" />
+                </sqlMapGenerator>
+
+                <javaClientGenerator type="XMLMAPPER"
+                        targetPackage="jp.co.axa.life.app.lt.mapper.autogen" targetProject="AxaNavi/src/main/java">
+                        <property name="enableSubPackages" value="true" />
+                </javaClientGenerator>
+
+                <table tableName="T_LRMS_CARE_HOSHO_KIHON" domainObjectName="TLrmsCareHoshoKihon">
+                </table>
+                <!-- 
+                <table tableName="T_LRMS_PFAMLY" domainObjectName="TLrmsPfamily">
+                </table>
+                 -->
+                 <!--
+                <table tableName="T_LRMS_SOGAKU_KIHON" domainObjectName="TLrmsSogakuKihon">
+                </table>
+                 -->
+                 <!--
+                <table tableName="T_LRMS_SOGAKU_ZISN" domainObjectName="TLrmsSogakuZisn">
+                </table>
+                 -->
+             
+        </context>
+</generatorConfiguration>

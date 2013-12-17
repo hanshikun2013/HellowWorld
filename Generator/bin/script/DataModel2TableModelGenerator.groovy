@@ -22,17 +22,22 @@ import tool.model.datamodel2table.Data2TableExcel
 //Config.namingMap.put("キャッシュフロー改善試算_T_CORP_CASHF_KAIZE", "method7")
 //Config.namingMap.put("退職金＋キャッシュフロー改善試算_T_CORP_KIHON_INFO", "method8")
 
-LRMS_相続:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_相続_テーブル←データモデルマッピング.xlsx"
-	gen( path, "souzoku")
-}
-LRMS_共通:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_共通_テーブル←データモデルマッピング.xlsx"
-	gen( path, "kyotsu")
-}
-LRMS_介護:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_介護_テーブル←データモデルマッピング.xlsx"
-	gen( path,"kaigo")
+//LRMS_相続:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_相続_テーブル←データモデルマッピング.xlsx"
+//	gen( path, "souzoku")
+//}
+//LRMS_共通:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_共通_テーブル←データモデルマッピング.xlsx"
+//	gen( path, "kyotsu")
+//}
+//LRMS_介護:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_介護_テーブル←データモデルマッピング.xlsx"
+//	gen( path,"kaigo")
+//}
+
+LRMS_セカンドライフ:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_セカンドライフ_テーブル←データモデルマッピング.xlsx"
+	gen( path,"secondlife")
 }
 
 
@@ -40,6 +45,9 @@ LRMS_介護:{
 public static  gen(String path,String base ) {
 	 String tableModelPackage=String.format("temp.d2t.%s.entity.gen",base)
 	 String dataModelPackage=String.format("temp.d2t.%s.datamodel.gen",base)
+	 //String tableModelPackage=String.format("jp.co.axa.life.app.lt.model.autogen",base)
+	 //String dataModelPackage=String.format("jp.co.axa.life.app.lt.common.domain",base)
+	 
 	 String copierPackage=String.format("temp.d2t.%s.copier.gen",base)
 	 
 	String datamodel2TableCopierName="Datamodel2TableCopier"
@@ -70,5 +78,5 @@ public static  gen(String path,String base ) {
 	new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+datamodel2TableCopierName+".java")
 	new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+datamodel2TableCopierName+"Test.java")
 	
-	new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
+	//new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
 }

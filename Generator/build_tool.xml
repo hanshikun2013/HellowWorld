@@ -19,10 +19,12 @@
 	<!--
 	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
 	</target>
-	-->
-	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
-	</target>
 	
+	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator">
+	</target>
+	-->
+	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,copy">
+	</target>
 	<target name="call.SampleGenerator">
 		<java classname="groovy.ui.GroovyMain" fork="yes" >
 			<classpath refid="classlib" />
@@ -89,15 +91,15 @@
 	    </copy>
 	  </target>
 	 <target name="init">
-	 	<delete verbose="true" includeemptydirs="false">
-	 		 <fileset dir="${dist.dir}"/>
+	 	<delete verbose="true" includeemptydirs="false" failonerror="false">
+	 		 <fileset dir="${dist.dir}" erroronmissingdir="false"/>
 	 		</delete>
 	  </target>
 	
 	 <target name="deletegen">
 	
-	 		 	<delete includeemptydirs="true">
-	 	    <fileset dir="C:/GIT_TORTOISE/newnavi-back/AxaNavi/src" defaultexcludes="false">
+	 	<delete includeemptydirs="true" failonerror="false">
+	 	    <fileset dir="C:/GIT_TORTOISE/newnavi-back/AxaNavi/src" defaultexcludes="false" erroronmissingdir="false">
 	 	       <include name="**/temp/**" />
 	 	    </fileset>
 	 	</delete>

@@ -55,6 +55,11 @@ public static  gen(String path,String base ) {
 	 String tableModelPackage=String.format("temp.t2d.%s.entity.gen",base)
 	 String dataModelPackage=String.format("temp.t2d.%s.datamodel.gen",base)
 	 String copierPackage=String.format("temp.t2d.%s.copier.gen",base)
+	 
+	 
+//	 String tableModelPackage=String.format("jp.co.axa.life.app.lt.model.autogen",base)
+//	 String dataModelPackage=String.format("jp.co.axa.life.app.lt.common.domain",base)
+
  	
 	String table2DatamodelCopierName="Table2DatamodelCopier"
 	String outputPath="C:/Users/cap/git/HellowWorld/Generator/dist"
@@ -83,5 +88,5 @@ public static  gen(String path,String base ) {
 	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+".java")
 	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"Test.java")
 	
-	new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
+	//new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
 }

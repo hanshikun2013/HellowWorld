@@ -1,6 +1,7 @@
 package ${packageDao};
 
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import jp.co.axa.life.fw.dao.BaseDao;
@@ -12,13 +13,16 @@ import ${packageResult}.${sqlModel.name}Record;
 @Repository
 public class ${sqlModel.name}Dao extends BaseDao 
 {
+	@Autowired
+	private ${sqlModel.name}Mapper $StringUtil.toLowerCaseInitial(${sqlModel.name})Mapper;
+	
 	/**
 	 * 
 	 * @param condition
 	 * @return
 	 */
 	public List<${sqlModel.name}Record> selectByCondition(${sqlModel.name}Condition condition) {
-		return getSqlSession().getMapper(${sqlModel.name}Mapper.class).selectByCondition(condition);
+		return ${StringUtil.toLowerCaseInitial(${sqlModel.name})}Mapper.selectByCondition(condition);
 	}
 	
 }

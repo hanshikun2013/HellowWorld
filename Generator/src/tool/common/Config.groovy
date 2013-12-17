@@ -18,5 +18,15 @@ class Config  {
 		Config.namingMap.put("ＬＲＭＳ相続_Lisc0001Collection", "lrmsSouzokuLisc0001Collection")
 		Config.namingMap.put("ＬＲＭＳ相続_Lisc000101Collection", "lrmsSouzokuLisc000101Collection")
 		Config.namingMap.put("ＬＲＭＳ相続_lbsc0002Collection", "lrmsSouzokulbsc0002Collection")
+		
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_HYSKN_EVENT", "transferTLrms2LfHysknEvent")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_HYSKN_JUTAKU", "transferTLrms2LfHysknJutaku")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_HYSKN_LIFE", "transferTLrms2LfHysknLife")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_HYSKN_OTHER", "transferTLrms2LfHysknOther")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_NKJKM", "transferTLrms2LfJzsknNkjkm")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_NKKNM", "transferTLrms2LfJzsknNkknm")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_OTHER", "transferTLrms2LfJzsknOther")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_JZSKN_SHUNYU", "transferTLrms2LfJzsknShunyu")
+		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_KIHON", "transferTLrms2LfKihon")
 	}
 }

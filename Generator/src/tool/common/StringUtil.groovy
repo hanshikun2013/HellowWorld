@@ -1,8 +1,63 @@
 package tool.common
 
+import tool.model.tabledef.TableSheet
+
 
 class StringUtil  {
 
+	
+	public static String getPkText(TableSheet tableSheet) {
+		String pk="";
+		boolean first=true;
+		for(HashMap item:tableSheet.items){
+			if(!"".equals(item.get("キー"))){
+				if(first){
+					first=false;
+					pk+=item.get("フィールド名");
+				}else{
+					pk+=" , "+item.get("フィールド名");
+				}
+			}
+		}
+		
+		return String.format("primary key (%s) ",pk);
+	}
+	public static String getCreateColText(Map map) {
+		if("".equalsIgnoreCase(map.get("フィールド名"))){
+			return "";
+		}
+		if("VARCHAR2".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s VARCHAR2(%s) %s,",map.get("フィールド名"),map.get("桁数") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		if("DATE".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s DATE %s,",map.get("フィールド名") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		if("TIMESTAMP".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s TIMESTAMP %s,",map.get("フィールド名") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		
+		if("NUMBER".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s NUMBER(%s %s) %s,",map.get("フィールド名"),map.get("桁数") ,"".equals(map.get("少数"))?"":map.get("少数") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		
+		if("double".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s NUMBER(%s) %s /*double*/,",map.get("フィールド名"),map.get("桁数") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		if("short".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s NUMBER(%s) %s /*short*/,",map.get("フィールド名"),map.get("桁数") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		
+		
+		if("string".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s VARCHAR2(%s) %s /*string*/,",map.get("フィールド名"),map.get("桁数") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		if("boolean".equalsIgnoreCase(map.get("属性"))){
+			return String.format("%s NUMBER(1,0) %s /*boolean */,",map.get("フィールド名") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		}
+		
+		return String.format("%s TODO %s",map.get("フィールド名") ,"".equals(map.get("Null"))?"":" NOT NULL ");
+		return "";
+	}
 	
 	public static String getMappingName(String str) {
 		String result=Config.namingMap.get(str)

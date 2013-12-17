@@ -1,0 +1,11 @@
+1.VPlanList->SelectPlanByPlanidRecord
+
+
+チェックしなくて良い型
+
+table2Data:
+SelectPlanByPlanidRecord
+TCorpKihonInfo
+
+data2Table:
+LtPlanCollection

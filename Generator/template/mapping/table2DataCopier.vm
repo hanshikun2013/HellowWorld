@@ -9,7 +9,7 @@ import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
 #end
 
 
-class $table2DatamodelCopierName{
+public  class $table2DatamodelCopierName{
 
 #foreach($funcModel in ${mappingModel.funcs})
 #foreach($funcGroupModel in ${funcModel.items})
