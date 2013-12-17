@@ -1,6 +1,8 @@
 package $copierPackage;
 
 import jp.co.axa.life.app.lt.util.ConverterUtility;
+import jp.co.axa.life.app.lt.common.LtSvConst;
+import jp.co.axa.life.app.lt.common.util.LtSvUtils;
 #foreach($dataModelName in ${mappingModel.dataModelList})
 import $dataModelPackage.$dataModelName;
 #end
@@ -30,9 +32,8 @@ public class $datamodel2TableCopierName{
 
 		$StringUtil.toCamelCase($funcGroupModel.name) result=new $StringUtil.toCamelCase($funcGroupModel.name)();
 #foreach($item in ${funcGroupModel.items})
-		{
-			//FROM:画面データモデル:$item.get("画面データモデル.モデルID/概要") 入力:$item.get("画面データモデル.入力") key名:$item.get("画面データモデル.key名") 型:$item.get("画面データモデル.型") 備考: $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
-			//TO:テーブル.テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数:$item.get("テーブル.少数") 備考:$StringUtil.cleanUpString($item.get("テーブル.備考"))
+		//FROM:画面データモデル:$item.get("画面データモデル.モデルID/概要") 入力:$item.get("画面データモデル.入力") key名:$item.get("画面データモデル.key名") 型:$item.get("画面データモデル.型") 備考: $StringUtil.cleanUpString($item.get("画面データモデル.備考"))
+		//TO:テーブル.テーブル:$item.get("テーブル.テーブル(物理/論理)") 論理:$item.get("テーブル.項目名(論理)") 物理:$item.get("テーブル.項目名(物理)") 属性:$item.get("テーブル.属性") 桁数:$item.get("テーブル.桁数") 少数:$item.get("テーブル.少数") 備考:$StringUtil.cleanUpString($item.get("テーブル.備考"))
 #set ($physicalName =	$item.get("テーブル.項目名(物理)") )
 #set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toCamelCase($physicalName)) )
 #set ($setTableMethod = "set$method")
@@ -43,13 +44,18 @@ public class $datamodel2TableCopierName{
 #set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
 #set ($srcObjName = "${srcObjName}Collection")			
 #if($keyName==""	)
-			//TODO:
-			//result.$setTableMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
+		//TODO:
+		//result.$setTableMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
 #else
-			//TODO:
-			result.$setTableMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
+		//TODO:
+#if($item.get("テーブル.備考").matches(".*×10000.*"))
+		result.$setTableMethod(LtSvUtils.multiply(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()),LtSvConst.TEN_THOUSAND));
+#elseif($item.get("テーブル.備考").matches(".*÷10000.*"))
+		result.$setTableMethod(LtSvUtils.divide(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()),LtSvConst.TEN_THOUSAND));
+#else
+		result.$setTableMethod(ConverterUtility.convert(${convertClass}.class,$srcObjName.${getDataMethod}()));
 #end
-		}
+#end
 #end
 
 		return result;
