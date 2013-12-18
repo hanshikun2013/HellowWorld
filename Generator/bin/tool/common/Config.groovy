@@ -30,6 +30,22 @@ class Config  {
 		Config.namingMap.put("ＬＲＭＳセカンドライフ_T_LRMS_2LF_KIHON", "transferTLrms2LfKihon")
 		
 		
+		
+		
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc0201Collection", "transferLlsc0201Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020201Collection", "transferLlsc020201Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020202Collection", "transferLlsc020202Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020203Collection", "transferLlsc020203Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020204Collection", "transferLlsc020204Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020205Collection", "transferLlsc020205Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020206Collection", "transferLlsc020206Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc0204Collection", "transferLlsc0204Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020501Collection", "transferLlsc020501Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020502Collection", "transferLlsc020502Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020503Collection", "transferLlsc020503Collection")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc0207Collection", "transferLlsc0207Collection")
+		
+		
 		Config.namingMap.put("_Lrsc0301Collection", "transferLrsc0301Collection")
 		Config.namingMap.put("_Lrsc030201Collection", "transferLrsc030201Collection")
 		Config.namingMap.put("_Lrsc030202Collection", "transferLrsc030202Collection")

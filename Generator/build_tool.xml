@@ -19,12 +19,13 @@
 	<!--
 	<target name="all" depends="init,deletegen,call.MybatisGeneratorForSql,copy">
 	</target>
-	
-	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator">
-	</target>
-	-->
 	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
 	</target>
+	-->
+	<target name="all" depends="deletegen,init,call.TableModel2DataModelGenerator">
+		</target>
+		
+
 	<target name="call.SampleGenerator">
 		<java classname="groovy.ui.GroovyMain" fork="yes" >
 			<classpath refid="classlib" />
