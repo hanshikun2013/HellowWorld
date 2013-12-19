@@ -22,7 +22,7 @@
 	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
 	</target>
 	-->
-	<target name="all" depends="deletegen,init,call.TableModel2DataModelGenerator">
+	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
 		</target>
 		
 

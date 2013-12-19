@@ -53,11 +53,17 @@ import tool.model.table2datamodel.Table2DataExcel
 //	gen( path, "secondlife"  )
 //}
 
-LRMS_セカンドライフ:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_死亡_データモデル←テーブルマッピング.xlsx"
-	gen( path, "shibohosyou"  )
+//LRMS_セカンドライフ:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_死亡_データモデル←テーブルマッピング.xlsx"
+//	gen( path, "shibohosyou"  )
+//}
+
+LRMS_医療:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_医療_データモデル←テーブルマッピング.xlsx"
+	gen( path, "iryou"  )
 }
 
+ 
 public static  gen(String path,String base ) {
 	 String tableModelPackage=String.format("temp.t2d.%s.entity.gen",base)
 	 String dataModelPackage=String.format("temp.t2d.%s.datamodel.gen",base)

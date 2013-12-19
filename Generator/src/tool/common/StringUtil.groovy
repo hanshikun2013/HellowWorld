@@ -156,10 +156,15 @@ class StringUtil  {
 
 
 	public static String toCamelCase(String s){
+		
 		String[] parts = s.split("_");
 		String camelCaseString = "";
 		for (String part : parts){
-			camelCaseString = camelCaseString + toProperCase(part);
+			if("L".equalsIgnoreCase(part)){
+				
+			}else{
+				camelCaseString = camelCaseString + toProperCase(part);
+			}
 		}
 		return camelCaseString;
 	}
@@ -172,9 +177,11 @@ class StringUtil  {
 		s.substring(1).toLowerCase();
 	}
 	public static String toPascalCase(String s){
+		s=s.replaceFirst("L_", "");
 		String[] parts = s.split("_");
 		String camelCaseString = "";
 		for (String part : parts){
+			
 			camelCaseString = camelCaseString + toProperCase(part);
 		}
 		return toLowerCaseInitial(camelCaseString);
@@ -215,6 +222,7 @@ class StringUtil  {
 		}
 		boolean first=true;
 		for(String str:list){
+			
 			if(first){
 				first=false;
 				result+=String.format("%s %s", StringUtil.toUpperCaseInitial(str),StringUtil.toLowerCaseInitial(str))

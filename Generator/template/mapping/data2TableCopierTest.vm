@@ -99,7 +99,6 @@ public class ${datamodel2TableCopierName}Test{
 #set ($getDataMethod = "get$keyName")
 #set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
 #set ($srcObjName = "${srcObjName}Collection")	
-			//TODO
 			assertEquals(null, result.$getTableMethod());
 #end
 		}
@@ -117,7 +116,6 @@ public class ${datamodel2TableCopierName}Test{
 		{
 #set ($dataModel =	$mappingModel.lookupDataModel($dataModelName) )		
 #foreach($item in ${dataModel.items})
-			//TODO
 			${StringUtil.toLowerCaseInitial($dataModelName)}.set${StringUtil.toUpperCaseInitial( $item.key)}(null);
 #end
 		}
@@ -137,7 +135,6 @@ public class ${datamodel2TableCopierName}Test{
 #set ($getDataMethod = "get$keyName")
 #set ($srcObjName = $StringUtil.toLowerCaseInitial($item.get("画面データモデル.モデルID/概要")))			
 #set ($srcObjName = "${srcObjName}Collection")	
-			//TODO
 			assertEquals(null, result.$getTableMethod());
 #end
 		}

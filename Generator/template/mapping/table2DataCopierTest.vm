@@ -110,7 +110,6 @@ public class ${table2DatamodelCopierName}Test{
 #set ( $convertClass = "String" )
 #set ($getTableMethod = "get$keyName")
 #set ($srcObjName = $StringUtil.toPascalCase($item.get("テーブル.テーブル(物理/論理)")))		
-			//TODO
 			assertEquals(null, result.$getDataMethod());
 #end
 		}

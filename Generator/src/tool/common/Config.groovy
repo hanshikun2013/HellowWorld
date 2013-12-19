@@ -31,6 +31,18 @@ class Config  {
 		
 		
 		
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_2LF_KIHON", "transferTLrms2LfKohon")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_EDUC", "transferTLrmsDihHysknEduc")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_JUTAKU", "transferTLrmsDihHysknJutaku")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_KEKKON", "transferTLrmsDihHysknKekkon")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_OTHER", "transferTLrmsDihHysknOther")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_LIFE", "transferTLrmsDihHysknLife")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_HYSKN_SHIBO", "transferTLrmsDihHysknShibo")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_JZSKN_NKJKM", "transferTLrmsDihJzsknNkjkm")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_JZSKN_NKKNM", "transferTLrmsDihJzsknNkknm")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_JZSKN_OTHER", "transferTLrmsDihJzsknOther")
+		Config.namingMap.put("ＬＲＭＳ死亡保障_L_T_LRMS_DIH_JZSKN_SHUNYU", "transferTLrmsDihJzsknShunyu")
+		
 		
 		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc0201Collection", "transferLlsc0201Collection")
 		Config.namingMap.put("ＬＲＭＳ死亡保障_Llsc020201Collection", "transferLlsc020201Collection")
@@ -57,6 +69,15 @@ class Config  {
 		Config.namingMap.put("_Lrsc030503Collection", "transferLrsc030503Collection")
 		Config.namingMap.put("_Lrsc030701Collection", "transferLrsc030701Collection")
 		
+		Config.namingMap.put("ＬＲＭＳ医療保障_Lmsc0401Collection", "transferLmsc0401Collection")
+		Config.namingMap.put("ＬＲＭＳ医療保障_Lmsc0402Collection", "transferLmsc0402Collection")
+		Config.namingMap.put("ＬＲＭＳ医療保障_Lmsc0403Collection", "transferLmsc0403Collection")
+		Config.namingMap.put("ＬＲＭＳ医療保障_Lmsc0405Collection", "transferLmsc0405Collection")
+		
+		
+		Config.namingMap.put("ＬＲＭＳ医療保障_L_T_LRMS_2LF_KIHON", "transferTLrms2LfKihon")
+		Config.namingMap.put("ＬＲＭＳ医療保障_L_T_LRMS_IRH_LFSKBY", "transferTLrmsIrhLfskby")
+		Config.namingMap.put("ＬＲＭＳ医療保障_L_T_LRMS_IRH_SHIPPEI_SELECT", "transferTLrmsIrhShippeiSelect")
 		
 	}
 }
