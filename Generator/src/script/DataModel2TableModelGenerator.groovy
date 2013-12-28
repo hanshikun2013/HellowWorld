@@ -41,15 +41,22 @@ import tool.model.datamodel2table.Data2TableExcel
 //}
 
 
-LRMS_死亡:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_死亡_テーブル←データモデルマッピング.xlsx"
-	gen( path,"shibohosyou")
+//LRMS_死亡:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_死亡_テーブル←データモデルマッピング.xlsx"
+//	gen( path,"shibohosyou")
+//}
+//
+//LRMS_医療:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_医療_テーブル←データモデルマッピング.xlsx"
+//	gen( path,"iryou")
+//}
+
+
+LRMS_既加入:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_既加入_テーブル←データモデルマッピング.xlsx"
+	gen( path,"kikanyu")
 }
 
-LRMS_医療:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_医療_テーブル←データモデルマッピング.xlsx"
-	gen( path,"iryou")
-}
 
 public static  gen(String path,String base ) {
 	 String tableModelPackage=String.format("temp.d2t.%s.entity.gen",base)

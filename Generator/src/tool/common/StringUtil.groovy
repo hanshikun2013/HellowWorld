@@ -69,17 +69,27 @@ class StringUtil  {
 		if(str==null) return "String";
 		String basicType="String";
 		
+		
+		
+	 
+		
+		
 		if("VARCHAR".equalsIgnoreCase(str)
 		||"VARCHAR2".equalsIgnoreCase(str)
 		||"Char".equalsIgnoreCase(str)
 		||"STRING".equalsIgnoreCase(str)
 		||"Code".equalsIgnoreCase(str)
 		||"DATE".equalsIgnoreCase(str)
+		||"文字列".equalsIgnoreCase(str)
 		
 		){
 			basicType= "String";
 		}
-		if("Number".equalsIgnoreCase(str) ){
+		if("Number".equalsIgnoreCase(str)
+			|| "数値".equalsIgnoreCase(str)
+			|| "BigDecimal".equalsIgnoreCase(str)
+			
+			 ){
 			basicType= "java.math.BigDecimal";
 		}
 		if("INTEGER".equalsIgnoreCase(str) ){

@@ -1,0 +1,70 @@
+package $copierPackage;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import jp.co.axa.life.fw.exception.SystemException;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import jp.co.axa.life.app.lt.util.ConverterUtility;
+#foreach($dataModelName in ${mappingModel.dataModelList})
+import $dataModelPackage.$dataModelName;
+#end
+#foreach($tableModelName in ${mappingModel.tableModelList})
+import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
+#end
+
+
+public class ${table2DatamodelCopierName}TestException{
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+	
+#foreach($funcModel in ${mappingModel.funcs})
+#foreach($funcGroupModel in ${funcModel.items})
+#set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
+#set ( $methodname = $StringUtil.getMappingName($orgmethod) )
+#set ( $param = $StringUtil.joinCallParams($funcGroupModel.tableModelList) )
+
+
+
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test(expected = SystemException.class)
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_ExceptionExpected(){
+		//Initialize parameters
+#foreach($tableModelName in ${funcGroupModel.tableModelList})
+		$StringUtil.toUpperCaseInitial($tableModelName) $StringUtil.toLowerCaseInitial($tableModelName) =new $StringUtil.toUpperCaseInitial($tableModelName) ();
+		{
+#set ($tableModel =	$mappingModel.lookupTableModelPascal(  $tableModelName) )		
+#foreach($item in ${tableModel.items})
+#set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.physicalName)) )
+			//TODO
+#if($attr==""	)
+			//${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#else
+			${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#end
+#end
+		}
+#end	
+		//call convert method
+		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
+		//assertions
+	}
+	
+#end
+#end
+
+}

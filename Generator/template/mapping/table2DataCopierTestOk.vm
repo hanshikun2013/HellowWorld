@@ -1,0 +1,84 @@
+package $copierPackage;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import jp.co.axa.life.fw.exception.SystemException;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import jp.co.axa.life.app.lt.util.ConverterUtility;
+#foreach($dataModelName in ${mappingModel.dataModelList})
+import $dataModelPackage.$dataModelName;
+#end
+#foreach($tableModelName in ${mappingModel.tableModelList})
+import $tableModelPackage.$StringUtil.toCamelCase($tableModelName);
+#end
+
+
+public class ${table2DatamodelCopierName}TestOk{
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+	
+#foreach($funcModel in ${mappingModel.funcs})
+#foreach($funcGroupModel in ${funcModel.items})
+#set ( $orgmethod = "${funcModel.name}_${funcGroupModel.name}" )
+#set ( $methodname = $StringUtil.getMappingName($orgmethod) )
+#set ( $param = $StringUtil.joinCallParams($funcGroupModel.tableModelList) )
+
+	/*
+	 * データ変換処理：
+	 * Test ${funcModel.name}:${funcGroupModel.name}
+	 */
+	@Test
+	public void test$StringUtil.toUpperCaseInitial(${methodname})_OK(){
+		//Initialize parameters
+#foreach($tableModelName in ${funcGroupModel.tableModelList})
+		$StringUtil.toUpperCaseInitial($tableModelName) $StringUtil.toLowerCaseInitial($tableModelName) =new $StringUtil.toUpperCaseInitial($tableModelName) ();
+		{
+#set ($lookupTableModel =	$mappingModel.lookupTableModelPascal(  $tableModelName) )		
+#foreach($item in ${lookupTableModel.items})
+#set ( $attr = $StringUtil.toLowerCaseInitial( $StringUtil.toCamelCase($item.physicalName)) )
+#if($attr==""	)
+			//${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#else
+			${StringUtil.toLowerCaseInitial($tableModelName)}.set$StringUtil.toUpperCaseInitial( $attr) (null);
+#end#end
+		}
+#end	
+		//call convert method
+		$StringUtil.toUpperCaseInitial($funcGroupModel.name) result=${table2DatamodelCopierName}.$StringUtil.toLowerCaseInitial(${methodname})($param);
+		//assertions
+		{
+#foreach($item in ${funcGroupModel.items})
+#set ($physicalName =	$item.get("テーブル.項目名(物理)") )
+#set ( $keyName=$StringUtil.toCamelCase($item.get("テーブル.項目名(物理)")	)		)
+#set ( $kName=$StringUtil.toUpperCaseInitial($item.get("画面データモデル.key名")	)		)
+#set ( $method = $StringUtil.toUpperCaseInitial( $StringUtil.toUpperCaseInitial($kName)) )
+#set ($getDataMethod = "get$method")
+#set ( $attr = "String" )
+#set ( $convertClass = "String" )
+#set ($getTableMethod = "get$keyName")
+#set ($srcObjName = $StringUtil.toPascalCase($item.get("テーブル.テーブル(物理/論理)")))		
+			//TODO
+			assertEquals(null, result.$getDataMethod());
+#end
+		}
+	}
+
+	
+
+	
+#end
+#end
+
+}

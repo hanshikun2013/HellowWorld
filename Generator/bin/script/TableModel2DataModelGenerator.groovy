@@ -58,11 +58,17 @@ import tool.model.table2datamodel.Table2DataExcel
 //	gen( path, "shibohosyou"  )
 //}
 
-LRMS_医療:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_医療_データモデル←テーブルマッピング.xlsx"
-	gen( path, "iryou"  )
-}
+//LRMS_医療:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_医療_データモデル←テーブルマッピング.xlsx"
+//	gen( path, "iryou"  )
+//}
 
+
+LRMS_既加入:{
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/tablemodel2datamodel/LRMS_既加入_データモデル←テーブルマッピング.xlsx"
+	gen( path, "kikanyu"  )
+
+}
  
 public static  gen(String path,String base ) {
 	 String tableModelPackage=String.format("temp.t2d.%s.entity.gen",base)
@@ -99,7 +105,14 @@ public static  gen(String path,String base ) {
 		new TemplateGenerator(template).generateFile(context, "mapping/dataModel.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+StringUtil.toUpperCaseInitial(dataModel.name)+".java")
 	}
 	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+".java")
-	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"Test.java")
+//	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"Test.java")
+	
+	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTestOk.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"TestOk.java")
+	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTestAllNull.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"TestAllNull.java")
+	new TemplateGenerator(template).generateFile(context, "mapping/table2DataCopierTestException.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+table2DatamodelCopierName+"TestException.java")
+
+	
+	
 	
 	//new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
 }

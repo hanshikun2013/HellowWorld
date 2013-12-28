@@ -23,7 +23,7 @@
 	</target>
 	-->
 	<target name="all" depends="deletegen,init,call.DataModel2TableModelGenerator,call.TableModel2DataModelGenerator,copy">
-		</target>
+	</target>
 		
 
 	<target name="call.SampleGenerator">
