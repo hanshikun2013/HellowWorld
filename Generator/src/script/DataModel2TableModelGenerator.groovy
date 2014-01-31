@@ -52,10 +52,15 @@ import tool.model.datamodel2table.Data2TableExcel
 //}
 
 
+//LRMS_既加入:{
+//	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_既加入_テーブル←データモデルマッピング.xlsx"
+//	gen( path,"kikanyu")
+//}
 LRMS_既加入:{
-	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LRMS_既加入_テーブル←データモデルマッピング.xlsx"
-	gen( path,"kikanyu")
+	String path ="C:/Users/cap/git/HellowWorld/Generator/input/datamodel2tablemodel/LNAS_テーブル←データモデルマッピング.xlsx"
+	gen( path,"lnas")
 }
+
 
 
 public static  gen(String path,String base ) {
@@ -92,7 +97,7 @@ public static  gen(String path,String base ) {
 		new TemplateGenerator(template).generateFile(context, "mapping/dataModel.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+StringUtil.toUpperCaseInitial(dataModel.name)+".java")
 	}
 	new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopier.vm",outputPath+"/src/main/java/"+copierPackage.replaceAll("\\.", "/")+"/"+datamodel2TableCopierName+".java")
-	new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+datamodel2TableCopierName+"Test.java")
+	//new TemplateGenerator(template).generateFile(context, "mapping/data2TableCopierTest.vm",outputPath+"/src/test/java/"+copierPackage.replaceAll("\\.", "/")+"/"+datamodel2TableCopierName+"Test.java")
 	
 	//new TemplateGenerator(template).generateFile(context, "mapping/dataModelRoot.vm",outputPath+"/src/main/java/"+dataModelPackage.replaceAll("\\.", "/")+"/"+"DataModelRoot.java")
 }

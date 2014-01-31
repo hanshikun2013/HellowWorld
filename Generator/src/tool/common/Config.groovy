@@ -226,5 +226,68 @@ class Config  {
 		Config.namingMap.put("ＬＲＭＳ既加入保険分析_L_T_LRMS_OLD_SUB_TEIKI_IRYO"  , "transferKikanyuTLrmsOldSubTeikiIryo")
 		Config.namingMap.put("ＬＲＭＳ既加入保険分析_L_T_LRMS_OLD_SUB_TEIZO"  , "transferKikanyuTLrmsOldSubTeizo")
 		
+		
+		Config.namingMap.put("かなえる_L_T_LNAS_KNERSKN"  , "transferTLnasKnerskn")
+		Config.namingMap.put("かなえる_L_T_LNAS_KNERSKN_PP"  , "transferTLnasKnersknPp")
+		Config.namingMap.put("かなえる_L_T_LNAS_KNERTSK_SHUNYU_UP"  , "transferTLnasKnertskShunyuUp")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_JLOAN"  , "transferTLnasLevjtkJloan")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_JLOAN_KKAE"  , "transferTLnasLevjtkJloanKkae")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_JLOAN_SYKN"  , "transferTLnasLevjtkJloanSykn")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_SHIKIN"  , "transferTLnasLevjtkShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVKKN_SHIKIN"  , "transferTLnasLevkknShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVKYI_SHIKIN"  , "transferTLnasLevkyiShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVRYK_SHIKIN"  , "transferTLnasLevrykShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVSCL_CRRDSIN"  , "transferTLnasLevsclCrrdsin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVSCL_JTGN"  , "transferTLnasLevsclJtgn")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVSCL_SEIKATSUHI"  , "transferTLnasLevsclSeikatsuhi")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVSCL_SHIKIN"  , "transferTLnasLevsclShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVSNT_SHIKIN"  , "transferTLnasLevsntShikin")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVTIK_LOAN"  , "transferTLnasLevtikLoan")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVTIK_SHIKIN"  , "transferTLnasLevtikShikin")
+		Config.namingMap.put("共通部_L_T_LNAS_HNOTE"  , "transferTLnasHnote")
+		Config.namingMap.put("共通部_L_T_LNAS_NEJ_DATA"  , "transferTLnasNejData")
+		Config.namingMap.put("共通部_L_T_LNAS_PFAMLY"  , "transferTLnasPfamly")
+		Config.namingMap.put("共通部_L_T_LNAS_PLAN_KIHON"  , "transferTLnasPlanKihon")
+		Config.namingMap.put("共通部_L_T_LNAS_SHOKAI_IRAI"  , "transferTLnasShokaiIrai")
+		Config.namingMap.put("共通部_L_T_LNAS_WDKK_COMMENT"  , "transferTLnasWdkkComment")
+		Config.namingMap.put("支える_L_T_LNAS_SSKPLN_SNSN_DET"  , "transferTLnasSskplnSnsnDet")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBCORP"  , "transferTLnasJbcorp")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI"  , "transferTLnasJbkoji")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_GCHKN_DET"  , "transferTLnasJbkojiGchknDet")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_SCHKN_DET"  , "transferTLnasJbkojiSchknDet")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_SECLIFJOB"  , "transferTLnasJbkojiSeclifjob")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_SEIHO_NENKIN"  , "transferTLnasJbkojiSeihoNenkin")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKUNI"  , "transferTLnasJbkuni")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKUNI_CP"  , "transferTLnasJbkuniCp")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKUNI_CP_DET"  , "transferTLnasJbkuniCpDet")
+		
+		
+		
+		Config.namingMap.put("かなえる_L_T_LNAS_KNERSKN_SEIKATSUHI1"  , "transferTLnasKnersknSeikatsuhi_Genzai")
+		Config.namingMap.put("かなえる_L_T_LNAS_KNERSKN_SEIKATSUHI2"  , "transferTLnasKnersknSeikatsuhi_Syorai")
+		
+
+		
+		
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN1"  , "transferTLnasSasaeruSiepln_Kyouik")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN2"  , "transferTLnasSasaeruSiepln_Kekon")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN3"  , "transferTLnasSasaeruSiepln_Ryokou")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN4"  , "transferTLnasSasaeruSiepln_Sonotakeikaku")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN5"  , "transferTLnasSasaeruSiepln_Izokuseikatsu")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN6"  , "transferTLnasSasaeruSiepln_Housework")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN7"  , "transferTLnasSasaeruSiepln_Shiboseiri")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN8"  , "transferTLnasSasaeruSiepln_Haigusyasyuunyu")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SIEPLN9"  , "transferTLnasSasaeruSiepln_Sonotasyuunyu")
+		
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SHIKIN1"  , "transferTLnasSasaeruShikin_Honnin")
+		Config.namingMap.put("支える_L_T_LNAS_SASAERU_SHIKIN2"  , "transferTLnasSasaeruShikin_Haigusya")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_JLOAN1"  , "transferTLnasLevjtkJloan_Genzai")
+		Config.namingMap.put("ライフイベント_L_T_LNAS_LEVJTK_JLOAN2"  , "transferTLnasLevjtkJloan_Syorai")
+		
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_HSSN_DET1"  , "transferTLnasJbkojiHssnDet_Zaisan")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKOJI_HSSN_DET2"  , "transferTLnasJbkojiHssnDet_Fusai")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKUNI_IZOKU1"  , "transferTLnasJbkuniIzoku_Honnin")
+		Config.namingMap.put("準備済資金_L_T_LNAS_JBKUNI_IZOKU2"  , "transferTLnasJbkuniIzoku_Haigusya")
+		
 	}
 }

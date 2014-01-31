@@ -1,0 +1,57 @@
+SET ECHO OFF
+SET FEEDBACK
+SET HEADING 
+SET PAGESIZE 0
+SET TERMOUT OFF
+SET TRIMSPOOL ON
+set  linesize  9999
+#*
+variable plan_id varchar2(36)
+exec :plan_id := '123'
+*#
+#foreach($tableSheet in ${excel.tableSheets})
+
+--------------------------------------------------
+--$tableSheet.tableName
+SPOOL ${tableSheet.tableName}.csv 
+
+SELECT 
+#foreach ($item in	$tableSheet.items )
+#if($velocityCount==$tableSheet.items.size())
+'$item.get('フィールド名')' 
+#else
+'$item.get('フィールド名')' || ',' ||
+#end
+#end
+FROM   dual;
+
+SELECT 
+#foreach ($item in	$tableSheet.items )
+#if($velocityCount==$tableSheet.items.size())
+#if($item.get('属性')=='DATE')
+to_char( $item.get('フィールド名'),'yyyy/mm/dd hh24:mi:ss')
+#else
+$item.get('フィールド名')
+#end
+#else
+#if($item.get('属性')=='DATE')
+to_char( $item.get('フィールド名'),'yyyy/mm/dd hh24:mi:ss')  || ',' ||
+#else
+$item.get('フィールド名') || ',' ||
+#end
+#end
+#end
+FROM $tableSheet.tableName ;
+
+SPOOL OFF 
+--------------------------------------------------
+#end
+
+
+
+SET ECHO ON 
+SET FEEDBACK ON 
+SET HEADING ON 
+SET PAGESIZE 24
+SET TERMOUT ON 
+SET TRIMSPOOL OFF 

@@ -1,4 +1,4 @@
-
+#*
 #foreach($tableSheet in ${excel.tableSheets})
 #if( "CMSTT0001" == $tableSheet.tableName
 	||"CMSTT0010" == $tableSheet.tableName
@@ -14,6 +14,7 @@
 	||"CMSTT0622" == $tableSheet.tableName
 	||"CMSTT0630" == $tableSheet.tableName
 )
+
 drop table $tableSheet.tableName cascade constraints;
 
 create table $tableSheet.tableName (
@@ -25,7 +26,78 @@ create table $tableSheet.tableName (
 #end
 	$StringUtil.getPkText($tableSheet)
 );
-#end
 
 #end
 
+#end
+*#
+
+
+SET ECHO OFF
+SET FEEDBACK
+SET HEADING 
+SET PAGESIZE 0
+SET TERMOUT OFF
+SET TRIMSPOOL ON
+set  linesize  9999
+
+
+#foreach($tableSheet in ${excel.tableSheets})
+#if( "CMSTT0001" == $tableSheet.tableName
+	||"CMSTT0010" == $tableSheet.tableName
+	||"CMSTT0600" == $tableSheet.tableName
+	||"CMSTT0601" == $tableSheet.tableName
+	||"CMSTT0602" == $tableSheet.tableName
+	||"CMSTT0603" == $tableSheet.tableName
+	||"CMSTT0606" == $tableSheet.tableName
+	||"CMSTT0607" == $tableSheet.tableName
+	||"CMSTT0608" == $tableSheet.tableName
+	||"CMSTT0610" == $tableSheet.tableName
+	||"CMSTT0622" == $tableSheet.tableName
+	||"CMSTT0630" == $tableSheet.tableName
+)
+--------------------------------------------------
+--L_$tableSheet.tableName
+SPOOL L_${tableSheet.tableName}.csv 
+
+SELECT 
+#foreach ($item in	$tableSheet.items )
+#if($velocityCount==$tableSheet.items.size())
+'$item.get('フィールド名')' 
+#else
+'$item.get('フィールド名')' || ',' ||
+#end
+#end
+FROM   dual;
+
+SELECT 
+#foreach ($item in	$tableSheet.items )
+#if($velocityCount==$tableSheet.items.size())
+#if($item.get('属性')=='DATE')
+to_char( $item.get('フィールド名'),'yyyy/mm/dd hh24:mi:ss')
+#else
+$item.get('フィールド名')
+#end
+#else
+#if($item.get('属性')=='DATE')
+to_char( $item.get('フィールド名'),'yyyy/mm/dd hh24:mi:ss')  || ',' ||
+#else
+$item.get('フィールド名') || ',' ||
+#end
+#end
+#end
+FROM L_$tableSheet.tableName ;
+
+SPOOL OFF 
+--------------------------------------------------
+#end
+#end
+
+
+
+SET ECHO ON 
+SET FEEDBACK ON 
+SET HEADING ON 
+SET PAGESIZE 24
+SET TERMOUT ON 
+SET TRIMSPOOL OFF 

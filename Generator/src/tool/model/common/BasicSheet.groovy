@@ -17,10 +17,10 @@ class BasicSheet {
 	public parse(Sheet sheet){
 		// 全シートをなめる
 		sheet.setForceFormulaRecalculation(true);// 数式解決(※)
-		//System.out.println("--- " + sheet.getSheetName() + " ---");
+		System.out.println("--- " + sheet.getSheetName() + " ---");
 		for (int rowCount = startY; rowCount < sheet.getLastRowNum() + 1; rowCount++) {
 		 Row row = sheet.getRow(rowCount);
-		 //System.out.println("row:"+rowCount);
+		 System.out.println("row:"+rowCount);
 		 
 		 Iterator<Cell> ite = row.cellIterator();
 		 HashMap item =new HashMap();
